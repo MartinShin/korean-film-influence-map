@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#14120f"/>
+  <path d="M0 150H1200M0 480H1200" stroke="#3d372c"/>
+  <circle cx="905" cy="185" r="28" fill="#d6ae57"/>
+  <circle cx="1040" cy="315" r="20" fill="#6ca6c8"/>
+  <circle cx="870" cy="445" r="17" fill="#77c9bf"/>
+  <path d="M1020 300C970 250 950 210 930 195M1025 330C970 380 930 420 890 438" fill="none" stroke="#f4eedf" stroke-width="5"/>
+  <text x="90" y="255" fill="#d6ae57" font-size="30" font-family="sans-serif" letter-spacing="8">CITATION-BASED FILM INFLUENCE</text>
+  <text x="90" y="345" fill="#f4eedf" font-size="72" font-family="serif" font-weight="700">한국영화 영향력 지도</text>
+  <text x="90" y="410" fill="#aaa18f" font-size="26" font-family="sans-serif">오마주와 계승 관계로 읽는 한국영화의 숨은 계보</text>
+</svg>

@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { data, rankedFilms } from '../lib/data';
+import type { Film } from '../data/types';
+const gold = rankedFilms('byGold');
+const indegree = rankedFilms('byInDegree');
+const pagerank = rankedFilms('byPageRank');
+type Card = { label: string; winner: Film; list: Film[]; metric: 'gold' | 'indegree' | 'pagerank' };
+const cards: Card[] = [
+  { label: '감독 직접 언급', winner: gold[0], list: gold.slice(0, 4), metric: 'gold' },
+  { label: '피인용 수', winner: indegree[0], list: indegree.slice(0, 4), metric: 'indegree' },
+  { label: 'PageRank', winner: pagerank[0], list: pagerank.slice(0, 4), metric: 'pagerank' },
+];
+const metricValue = (film: Film, metric: Card['metric']) => metric === 'gold' ? film.metrics.goldInDegree : metric === 'indegree' ? film.metrics.inDegree : film.metrics.pageRank.toFixed(5);
+---
+<BaseLayout title="한국영화 영향력 지도" description="오마주, 감독의 직접 언급, 평론의 계보를 연결해 한국영화의 영향력을 탐색하는 파일럿 연구입니다.">
+  <section class="hero container">
+    <div class="eyebrow">Citation-based film influence</div>
+    <h1>명성 너머,<span>영향의 계보</span></h1>
+    <p class="lede">어떤 영화가 가장 훌륭한가가 아니라, 어떤 영화가 후대의 영화를 움직였는가를 묻습니다. 감독의 발언과 평론, 작품 속 참조를 하나의 방향 그래프로 연결했습니다.</p>
+    <div class="hero-actions"><a class="button primary" href="/map/">계보 지도 탐색</a><a class="button" href="/rankings/">세 가지 순위 보기</a></div>
+    <p class="pilot-note" style="margin-top:2rem">KOFA 100선 가운데 허브 30편에서 출발한 파일럿 v1입니다. 현재 순위는 수집 범위와 출처 기록의 영향을 받으며 KOFA의 공식 영향력 순위가 아닙니다.</p>
+  </section>
+  <section class="container stats" aria-label="파일럿 데이터 규모"><div class="stat"><strong>{data.meta.counts.seedFilmsProcessed}</strong><span>출발 영화</span></div><div class="stat"><strong>{data.meta.counts.publishedEdges}</strong><span>검증된 영향 관계</span></div><div class="stat"><strong>{data.meta.counts.publishedNodes}</strong><span>계보에 등장한 영화</span></div></section>
+  <section class="section container">
+    <div class="section-head"><div><div class="eyebrow">Three lenses</div><h2>세 척도, 세 1위</h2></div><p>직접적인 증언, 단순한 피인용 수, 연결 구조의 중심성은 서로 다른 종류의 영향력을 보여줍니다.</p></div>
+    <div class="rank-grid">{cards.map((card) => <article class="rank-card"><div class="metric">{card.label}</div><div class="winner">{card.winner.titleKo}</div><p>{card.winner.director} · {card.winner.year}</p><ol>{card.list.map((film) => <li><a href={`/films/${film.id}/`}>{film.titleKo}</a><span>{metricValue(film, card.metric)}</span></li>)}</ol></article>)}</div>
+  </section>
+  <section class="section container">
+    <div class="section-head"><div><div class="eyebrow">Findings</div><h2>그래프가 들려준 이야기</h2></div><a href="/methodology/">해석의 한계 읽기 →</a></div>
+    <div class="stories"><article class="story"><div class="number">01</div><h3>유실된 만추의 귀환</h3><p>시드에 없던 이만희의 <em>만추</em>가 감독의 직접 언급을 타고 그래프에 진입해 PageRank 2위로 떠올랐습니다.</p></article><article class="story"><div class="number">02</div><h3>기생충의 시간 문제</h3><p>명성 순위는 높지만 국내 후대 영화의 유입은 아직 0입니다. 최신작이 인용을 축적할 시간이 필요하다는 연식 효과가 드러납니다.</p></article><article class="story"><div class="number">03</div><h3>올드보이의 영향은 바깥으로</h3><p>국내 계보에서는 피인용 2개에 머물지만, 별도 데모에서는 할리우드와 인도영화로 뻗은 영향이 더 풍부했습니다.</p></article><article class="story"><div class="number">04</div><h3>필터가 순위를 바꾼다</h3><p>나무위키 단독 근거 8개를 제외하자 <em>인정사정 볼 것 없다</em>의 피인용은 8에서 4로 줄었습니다. 출처 정책도 결과의 일부입니다.</p></article></div>
+  </section>
+</BaseLayout>

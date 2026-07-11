@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import RankTable from '../components/RankTable.astro';
+import { rankedFilms } from '../lib/data';
+const gold = rankedFilms('byGold');
+const indegree = rankedFilms('byInDegree');
+const pagerank = rankedFilms('byPageRank');
+---
+<BaseLayout title="영향력 순위" description="감독 직접 언급, 피인용 수, PageRank로 살펴본 한국영화 영향력 파일럿 순위입니다.">
+  <header class="page-hero container"><div class="eyebrow">Rankings</div><h1>영향력은 하나의 숫자가 아니다</h1><p class="lede">증언의 강도, 인용의 양, 네트워크 안의 위치를 분리해 봅니다. 어떤 척도를 택하느냐에 따라 1위도 달라집니다.</p><div class="subnav"><a href="#gold">감독선언</a><a href="#indegree">피인용</a><a href="#pagerank">PageRank</a></div></header>
+  <div class="container"><p class="pilot-note" style="margin-top:2rem">기본 순위는 나무위키 단독 근거 8개를 제외한 정책 그래프 79개 엣지로 계산합니다. 동률은 가중 영향 점수와 안정 ID로 결정합니다.</p></div>
+  <section id="gold" class="metric-section container"><div class="section-head"><div><div class="eyebrow">Direct testimony</div><h2>감독 직접 언급</h2></div><p>감독이 특정 선대 영화를 영향원, 오마주, 참고작으로 직접 밝힌 관계만 셉니다. 가장 강한 증거지만 인터뷰가 남지 않은 작품에는 불리합니다.</p></div><RankTable films={gold} metric="gold" caption="감독 직접 언급 수 기준 상위 영화" limit={15} /></section>
+  <section id="indegree" class="metric-section container"><div class="section-head"><div><div class="eyebrow">Citation count</div><h2>피인용 수</h2></div><p>후대 영화에서 들어오는 검증된 영향 관계의 수입니다. 직관적이고 강건하지만 모든 엣지를 같은 한 건으로 셉니다.</p></div><RankTable films={indegree} metric="indegree" caption="검증된 피인용 수 기준 상위 영화" limit={15} /></section>
+  <section id="pagerank" class="metric-section container"><div class="section-head"><div><div class="eyebrow">Network centrality</div><h2>PageRank</h2></div><p>영향력 있는 영화가 가리키는 선대 영화에 더 큰 값을 주는 재귀 지표입니다. 현재처럼 작은 그래프에서는 소수 엣지에 민감합니다.</p></div><RankTable films={pagerank} metric="pagerank" caption="비가중 PageRank 기준 상위 영화" limit={15} /></section>
+</BaseLayout>

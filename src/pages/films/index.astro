@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { films } from '../../lib/data';
+const ordered = [...films].sort((a,b) => b.metrics.inDegree - a.metrics.inDegree || a.year - b.year);
+---
+<BaseLayout title="영화 목록" description="한국영화 영향력 파일럿 그래프에 등장한 87편의 영화 목록입니다.">
+  <header class="page-hero container"><div class="eyebrow">Film index</div><h1>계보에 등장한 87편</h1><p class="lede">영화별로 들어오는 영향 관계, 참조한 선대 영화, 근거 출처를 확인할 수 있습니다.</p></header>
+  <section class="section container">
+    <div class="filters"><label>제목 검색<input id="film-search" type="search" placeholder="영화 제목 입력" /></label><label>정렬<select id="film-sort"><option value="in">피인용 높은 순</option><option value="year-asc">연도 오래된 순</option><option value="year-desc">연도 최신 순</option><option value="gold">감독선언 높은 순</option></select></label><label>KOFA<select id="film-kofa"><option value="all">전체</option><option value="yes">KOFA 100선</option><option value="no">비시드</option></select></label></div>
+    <p id="film-count" aria-live="polite">{ordered.length}편</p>
+    <div id="film-list" class="film-list">{ordered.map((film) => <a class="film-item" href={`/films/${film.id}/`} data-title={film.titleKo.replaceAll(' ','').toLowerCase()} data-year={film.year} data-in={film.metrics.inDegree} data-gold={film.metrics.goldInDegree} data-kofa={film.kofa.selected2024 ? 'yes':'no'}><strong>{film.titleKo}</strong><small>{film.director || '감독 정보 없음'} · {film.year}</small><div class="mini-metrics"><span>피인용 {film.metrics.inDegree}</span><span>감독선언 {film.metrics.goldInDegree}</span><span>PR {film.metrics.pageRank.toFixed(4)}</span></div></a>)}</div>
+  </section>
+  <script>
+    const search = document.querySelector<HTMLInputElement>('#film-search')!;
+    const sort = document.querySelector<HTMLSelectElement>('#film-sort')!;
+    const kofa = document.querySelector<HTMLSelectElement>('#film-kofa')!;
+    const list = document.querySelector<HTMLElement>('#film-list')!;
+    const count = document.querySelector<HTMLElement>('#film-count')!;
+    const items = Array.from(list.querySelectorAll<HTMLElement>('.film-item'));
+    function update() {
+      const q = search.value.replaceAll(' ','').toLowerCase();
+      const visible = items.filter((item) => item.dataset.title!.includes(q) && (kofa.value === 'all' || item.dataset.kofa === kofa.value));
+      for (const item of items) item.hidden = !visible.includes(item);
+      const by = sort.value;
+      visible.sort((a,b) => by === 'year-asc' ? Number(a.dataset.year)-Number(b.dataset.year) : by === 'year-desc' ? Number(b.dataset.year)-Number(a.dataset.year) : by === 'gold' ? Number(b.dataset.gold)-Number(a.dataset.gold) : Number(b.dataset.in)-Number(a.dataset.in));
+      for (const item of visible) list.append(item);
+      count.textContent = `${visible.length}편`;
+    }
+    search.addEventListener('input', update); sort.addEventListener('change', update); kofa.addEventListener('change', update);
+  </script>
+</BaseLayout>

@@ -1,0 +1,25 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# local tooling and internal instructions
+.vercel/
+.artifacts/
+research-input/
+AGENTS.md
+CLAUDE.md
+check-output.log
+check-error.log
+*.log
+
+# environment
+.env
+.env.*
+!.env.example
+
+# editor and OS
+.DS_Store
+Thumbs.db

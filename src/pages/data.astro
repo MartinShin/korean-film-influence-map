@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { data } from '../lib/data';
+---
+<BaseLayout title="데이터" description="한국영화 영향력 파일럿 v1의 공개 JSON과 CSV, 스키마와 재사용 주의사항입니다.">
+  <header class="page-hero container"><div class="eyebrow">Open data snapshot</div><h1>결과뿐 아니라 근거까지</h1><p class="lede">웹사이트에 사용한 정규화 데이터와 계산 결과를 같은 버전으로 제공합니다. 내부 조사 로그와 긴 연구 메모는 공개본에 포함하지 않습니다.</p></header>
+  <section class="section container"><div class="stats"><div class="stat"><strong>{data.meta.counts.publishedEdges}</strong><span>공개 엣지</span></div><div class="stat"><strong>{data.meta.counts.publishedNodes}</strong><span>공개 노드</span></div><div class="stat"><strong>v1</strong><span>방법론 버전</span></div></div>
+    <div class="download-grid"><a class="download" href="/data/dataset-pilot-v1.json" download><strong>전체 JSON</strong><span>영화·엣지·지표·출처</span></a><a class="download" href="/data/films-pilot-v1.csv" download><strong>영화 CSV</strong><span>87개 노드와 네 지표</span></a><a class="download" href="/data/edges-pilot-v1.csv" download><strong>엣지 CSV</strong><span>79개 검증 관계</span></a></div>
+    <div class="prose" style="padding-bottom:0"><h2>공개 범위</h2><p>연구 엣지 87개 가운데 나무위키 단독 출처 8개는 후보로 분리하고 다운로드 순위 데이터에서는 제외했습니다. 공개 JSON의 근거문은 원문 전체가 아니라 연구용 발췌입니다.</p><h2>주요 필드</h2><ul><li><code>citingFilmId</code>: 영향을 받은 후대 영화</li><li><code>citedFilmId</code>: 영향을 준 선대 영화</li><li><code>signal</code>: 감독 직접 언급, 평론가, 대중</li><li><code>confidence</code>: high, medium, low</li><li><code>relationType</code>: 영향, 오마주, 참조, 패러디 등</li></ul><h2>재사용</h2><p>코드, 자체 편집 데이터, 제3자 발췌문의 권리는 서로 다릅니다. 현재 공개본은 열람과 연구 검토를 위한 것이며, 별도 데이터 라이선스가 확정되기 전 대량 재배포 시에는 출처와 권리 상태를 직접 확인해야 합니다.</p><h2>버전 정보</h2><p>연구 기준일 {data.meta.researchDate}, 데이터셋 {data.meta.datasetVersion}, 방법론 {data.meta.methodologyVersion}.</p></div>
+  </section>
+</BaseLayout>

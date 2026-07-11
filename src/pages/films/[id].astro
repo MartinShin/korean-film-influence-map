@@ -1,0 +1,21 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { films, filmById, incomingEdges, outgoingEdges, signalLabel, confidenceLabel, relationLabel } from '../../lib/data';
+import type { Edge, Film } from '../../data/types';
+
+export const getStaticPaths = (() => films.map((film) => ({ params: { id: film.id }, props: { film } }))) satisfies GetStaticPaths;
+const { film } = Astro.props as { film: Film };
+const incoming = incomingEdges(film.id);
+const outgoing = outgoingEdges(film.id);
+const otherFilm = (edge: Edge, direction: 'incoming' | 'outgoing') => filmById.get(direction === 'incoming' ? edge.citingFilmId : edge.citedFilmId)!;
+---
+<BaseLayout title={`${film.titleKo} (${film.year})`} description={`${film.titleKo}의 한국영화 영향 관계, 피인용 수와 근거 출처를 확인합니다.`}>
+  <header class="page-hero container"><div class="eyebrow">Film node · {film.id}</div><h1>{film.titleKo}</h1><div class="film-meta"><span>{film.director || '감독 정보 없음'}</span><span>{film.year}</span>{film.kofa.selected2024 && <span class="badge gold">KOFA 100선{film.kofa.exactRank ? ` ${film.kofa.exactRank}위` : ' · 세부 순위 없음'}</span>}</div></header>
+  <article class="container">
+    <div class="metric-strip"><div><strong>{film.metrics.inDegree}</strong><span>피인용</span></div><div><strong>{film.metrics.goldInDegree}</strong><span>감독 직접 언급</span></div><div><strong>{film.metrics.weightedInDegree.toFixed(2)}</strong><span>가중 영향 점수</span></div><div><strong>{film.metrics.pageRank.toFixed(5)}</strong><span>PageRank</span></div></div>
+    <p class="pilot-note">이 수치는 KOFA 100선 가운데 30편에서 출발한 파일럿 그래프 안에서만 유효합니다. 관계가 기록되지 않았다는 사실은 영향이 없다는 뜻이 아닙니다.</p>
+    <section class="metric-section"><div class="section-head"><div><div class="eyebrow">Cited by</div><h2>이 영화를 계승한 후대 영화</h2></div><p>이 영화로 들어오는 영향 관계 {incoming.length}개</p></div>{incoming.length ? <ul class="edge-list">{incoming.map((edge) => { const other=otherFilm(edge,'incoming'); return <li><div class="edge-head"><a href={`/films/${other.id}/`}>{other.titleKo} ({other.year})</a><span>→ {film.titleKo}</span><span class="badge gold">{signalLabel[edge.signal]}</span><span class="badge">{relationLabel[edge.relationType]}</span><span class="badge">신뢰도 {confidenceLabel[edge.confidence]}</span></div><blockquote>{edge.evidence.publicExcerpt}</blockquote><a class="source-link" href={edge.sources[0].url} target="_blank" rel="noopener noreferrer">원문 출처 열기</a></li>})}</ul> : <p class="empty">현재 파일럿에서 확인된 유입 관계가 없습니다.</p>}</section>
+    <section class="metric-section"><div class="section-head"><div><div class="eyebrow">References</div><h2>이 영화가 참조한 선대 영화</h2></div><p>이 영화에서 나가는 영향 관계 {outgoing.length}개</p></div>{outgoing.length ? <ul class="edge-list">{outgoing.map((edge) => { const other=otherFilm(edge,'outgoing'); return <li><div class="edge-head"><span>{film.titleKo} →</span><a href={`/films/${other.id}/`}>{other.titleKo} ({other.year})</a><span class="badge gold">{signalLabel[edge.signal]}</span><span class="badge">{relationLabel[edge.relationType]}</span></div><blockquote>{edge.evidence.publicExcerpt}</blockquote><a class="source-link" href={edge.sources[0].url} target="_blank" rel="noopener noreferrer">원문 출처 열기</a></li>})}</ul> : <p class="empty">현재 파일럿에서 확인된 선대 영화 참조가 없습니다.</p>}</section>
+  </article>
+</BaseLayout>

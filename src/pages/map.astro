@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import InfluenceMap from '../components/InfluenceMap';
+import { edges, filmById, films, signalLabel, confidenceLabel, relationLabel } from '../lib/data';
+---
+<BaseLayout title="계보 지도" description="1960년부터 2025년까지 한국영화의 오마주와 영향 관계를 연도축에서 탐색합니다.">
+  <header class="page-hero container"><div class="eyebrow">Lineage map · 1960–2025</div><h1>영화는 과거를 향해 말을 건다</h1><p class="lede">곡선은 후대 영화에서 영향을 준 선대 영화로 향합니다. 높이는 가중 영향 점수이며, 노드를 선택하면 해당 영화의 계보만 따라갈 수 있습니다.</p></header>
+  <div class="map-shell container"><InfluenceMap films={films} edges={edges} client:only="react" /></div>
+  <section class="section container" aria-labelledby="edge-table-title"><div class="section-head"><div><div class="eyebrow">Accessible alternative</div><h2 id="edge-table-title">전체 관계 목록</h2></div><p>지도와 같은 79개 관계를 표로 제공합니다. 키보드와 화면읽기 프로그램에서도 모든 근거에 접근할 수 있습니다.</p></div>
+    <div class="table-wrap"><table><caption>정책 그래프의 검증된 영향 관계 79개</caption><thead><tr><th>후대 영화</th><th>영향을 준 영화</th><th>신호</th><th>관계</th><th>신뢰도</th><th>출처</th></tr></thead><tbody>{edges.map((edge) => { const citing=filmById.get(edge.citingFilmId)!; const cited=filmById.get(edge.citedFilmId)!; return <tr><td><a href={`/films/${citing.id}/`}>{citing.titleKo} ({citing.year})</a></td><td><a href={`/films/${cited.id}/`}>{cited.titleKo} ({cited.year})</a></td><td>{signalLabel[edge.signal]}</td><td>{relationLabel[edge.relationType]}</td><td>{confidenceLabel[edge.confidence]}</td><td><a class="source-link" href={edge.sources[0].url} target="_blank" rel="noopener noreferrer">원문</a></td></tr>})}</tbody></table></div>
+  </section>
+</BaseLayout>

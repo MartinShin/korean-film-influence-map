@@ -1,0 +1,4185 @@
+{
+  "meta": {
+    "schemaVersion": "1",
+    "datasetVersion": "pilot-v1",
+    "methodologyVersion": "1",
+    "researchDate": "2026-07-09",
+    "generatedAt": "2026-07-11T00:05:42.488Z",
+    "sourceSnapshotSha256": "46031b6b48f70d1f1ca7301b849d388a530e4ea3decd43262412fbce172f88e8",
+    "counts": {
+      "seedFilmsProcessed": 30,
+      "researchEdges": 87,
+      "publishedEdges": 79,
+      "candidateEdges": 8,
+      "researchNodes": 95,
+      "publishedNodes": 87
+    }
+  },
+  "films": [
+    {
+      "id": "film_0001",
+      "titleKo": "하녀",
+      "year": 1960,
+      "director": "김기영",
+      "aliases": [
+        "하녀"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": 1
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 6,
+        "outDegree": 0,
+        "goldInDegree": 4,
+        "weightedInDegree": 13,
+        "pageRank": 0.037012484576799114
+      }
+    },
+    {
+      "id": "film_0002",
+      "titleKo": "오발탄",
+      "year": 1961,
+      "director": "유현목",
+      "aliases": [
+        "오발탄"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": 4
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 3,
+        "outDegree": 0,
+        "goldInDegree": 0,
+        "weightedInDegree": 2,
+        "pageRank": 0.042155898586779664
+      }
+    },
+    {
+      "id": "film_0003",
+      "titleKo": "만추",
+      "year": 1966,
+      "director": "이만희",
+      "aliases": [
+        "만추"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 1,
+        "outDegree": 0,
+        "goldInDegree": 1,
+        "weightedInDegree": 3,
+        "pageRank": 0.03894446034358702
+      }
+    },
+    {
+      "id": "film_0004",
+      "titleKo": "안개",
+      "year": 1967,
+      "director": "김수용",
+      "aliases": [
+        "안개"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 1,
+        "outDegree": 0,
+        "goldInDegree": 1,
+        "weightedInDegree": 3,
+        "pageRank": 0.01094547965372148
+      }
+    },
+    {
+      "id": "film_0005",
+      "titleKo": "화녀",
+      "year": 1970,
+      "director": "김기영",
+      "aliases": [
+        "화녀"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 1,
+        "outDegree": 0,
+        "goldInDegree": 0,
+        "weightedInDegree": 1.333333,
+        "pageRank": 0.0075928102102390226
+      }
+    },
+    {
+      "id": "film_0006",
+      "titleKo": "충녀",
+      "year": 1972,
+      "director": "김기영",
+      "aliases": [
+        "충녀"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 1,
+        "outDegree": 0,
+        "goldInDegree": 1,
+        "weightedInDegree": 3,
+        "pageRank": 0.0075928102102390226
+      }
+    },
+    {
+      "id": "film_0007",
+      "titleKo": "별들의 고향",
+      "year": 1974,
+      "director": "이장호",
+      "aliases": [
+        "별들의 고향"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 4,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 4.666667,
+        "pageRank": 0.0388564527707175
+      }
+    },
+    {
+      "id": "film_0008",
+      "titleKo": "아내들의 행진",
+      "year": 1974,
+      "director": "임권택",
+      "aliases": [
+        "아내들의 행진"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 1,
+        "outDegree": 0,
+        "goldInDegree": 0,
+        "weightedInDegree": 1.333333,
+        "pageRank": 0.01949478673460479
+      }
+    },
+    {
+      "id": "film_0009",
+      "titleKo": "바보들의 행진",
+      "year": 1975,
+      "director": "하길종",
+      "aliases": [
+        "바보들의 행진"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": 6
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 2,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 4,
+        "pageRank": 0.015974483818945166
+      }
+    },
+    {
+      "id": "film_0010",
+      "titleKo": "삼포가는 길",
+      "year": 1975,
+      "director": "이만희",
+      "aliases": [
+        "삼포가는 길"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0011",
+      "titleKo": "영자의 전성시대",
+      "year": 1975,
+      "director": "김호선",
+      "aliases": [
+        "영자의 전성시대"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 3,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 4.666667,
+        "pageRank": 0.021003487984168852
+      }
+    },
+    {
+      "id": "film_0012",
+      "titleKo": "미스 염의 순정시절",
+      "year": 1976,
+      "director": "김선경",
+      "aliases": [
+        "미스 염의 순정시절"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0013",
+      "titleKo": "겨울여자",
+      "year": 1977,
+      "director": "김호선",
+      "aliases": [
+        "겨울여자"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0014",
+      "titleKo": "속 별들의 고향",
+      "year": 1978,
+      "director": "하길종",
+      "aliases": [
+        "속 별들의 고향"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0015",
+      "titleKo": "바람 불어 좋은 날",
+      "year": 1980,
+      "director": "이장호",
+      "aliases": [
+        "바람 불어 좋은 날",
+        "바람불어 좋은날"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 4,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 4,
+        "pageRank": 0.03080166443274316
+      }
+    },
+    {
+      "id": "film_0016",
+      "titleKo": "속 병태와 영자",
+      "year": 1980,
+      "director": "이강윤",
+      "aliases": [
+        "속 병태와 영자"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0017",
+      "titleKo": "최후의 증인",
+      "year": 1980,
+      "director": "이두용",
+      "aliases": [
+        "최후의 증인"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 2,
+        "outDegree": 0,
+        "goldInDegree": 1,
+        "weightedInDegree": 3.666667,
+        "pageRank": 0.023038139252680806
+      }
+    },
+    {
+      "id": "film_0018",
+      "titleKo": "난장이가 쏘아올린 작은 공",
+      "year": 1981,
+      "director": "이원세",
+      "aliases": [
+        "난장이가 쏘아올린 작은 공"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0019",
+      "titleKo": "별들의 고향 3",
+      "year": 1981,
+      "director": "이경태",
+      "aliases": [
+        "별들의 고향 3"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0020",
+      "titleKo": "꼬방동네 사람들",
+      "year": 1982,
+      "director": "배창호",
+      "aliases": [
+        "꼬방동네 사람들"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0021",
+      "titleKo": "속 영자의 전성시대",
+      "year": 1982,
+      "director": "심재석",
+      "aliases": [
+        "속 영자의 전성시대"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0023",
+      "titleKo": "고래사냥",
+      "year": 1984,
+      "director": "배창호",
+      "aliases": [
+        "고래사냥"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0024",
+      "titleKo": "87 영자의 전성시대",
+      "year": 1987,
+      "director": "유진선",
+      "aliases": [
+        "87 영자의 전성시대"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0025",
+      "titleKo": "칠수와 만수",
+      "year": 1988,
+      "director": "박광수",
+      "aliases": [
+        "칠수와 만수"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0026",
+      "titleKo": "그들도 우리처럼",
+      "year": 1990,
+      "director": "박광수",
+      "aliases": [
+        "그들도 우리처럼"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0027",
+      "titleKo": "서편제",
+      "year": 1993,
+      "director": "임권택",
+      "aliases": [
+        "서편제"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 3,
+        "outDegree": 0,
+        "goldInDegree": 2,
+        "weightedInDegree": 5.666667,
+        "pageRank": 0.021003487984168852
+      }
+    },
+    {
+      "id": "film_0028",
+      "titleKo": "꽃잎",
+      "year": 1996,
+      "director": "장선우",
+      "aliases": [
+        "꽃잎"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 1,
+        "outDegree": 0,
+        "goldInDegree": 0,
+        "weightedInDegree": 0.666667,
+        "pageRank": 0.012014143038831894
+      }
+    },
+    {
+      "id": "film_0029",
+      "titleKo": "돼지가 우물에 빠진 날",
+      "year": 1996,
+      "director": "홍상수",
+      "aliases": [
+        "돼지가 우물에 빠진 날"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": 10
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 1,
+        "outDegree": 0,
+        "goldInDegree": 0,
+        "weightedInDegree": 1.333333,
+        "pageRank": 0.01094547965372148
+      }
+    },
+    {
+      "id": "film_0030",
+      "titleKo": "8월의 크리스마스",
+      "year": 1998,
+      "director": "허진호",
+      "aliases": [
+        "8월의 크리스마스"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": 8
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 4,
+        "outDegree": 0,
+        "goldInDegree": 2,
+        "weightedInDegree": 5,
+        "pageRank": 0.026032492149392537
+      }
+    },
+    {
+      "id": "film_0031",
+      "titleKo": "여고괴담",
+      "year": 1998,
+      "director": "박기형",
+      "aliases": [
+        "여고괴담"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 1,
+        "outDegree": 0,
+        "goldInDegree": 1,
+        "weightedInDegree": 3,
+        "pageRank": 0.01949478673460479
+      }
+    },
+    {
+      "id": "film_0032",
+      "titleKo": "박하사탕",
+      "year": 1999,
+      "director": "이창동",
+      "aliases": [
+        "박하사탕"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 1,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 2,
+        "pageRank": 0.007173726529803715
+      }
+    },
+    {
+      "id": "film_0033",
+      "titleKo": "쉬리",
+      "year": 1999,
+      "director": "강제규",
+      "aliases": [
+        "쉬리"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 6,
+        "outDegree": 0,
+        "goldInDegree": 0,
+        "weightedInDegree": 7.666667,
+        "pageRank": 0.024555222175859794
+      }
+    },
+    {
+      "id": "film_0034",
+      "titleKo": "여고괴담 두번째 이야기",
+      "year": 1999,
+      "director": "김태용, 민규동",
+      "aliases": [
+        "여고괴담 두번째 이야기"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 2,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 1.333333,
+        "pageRank": 0.015974483818945166
+      }
+    },
+    {
+      "id": "film_0035",
+      "titleKo": "인정사정 볼 것 없다",
+      "year": 1999,
+      "director": "이명세",
+      "aliases": [
+        "인정사정 볼 것 없다"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 4,
+        "outDegree": 0,
+        "goldInDegree": 1,
+        "weightedInDegree": 6.666667,
+        "pageRank": 0.0270299113088254
+      }
+    },
+    {
+      "id": "film_0036",
+      "titleKo": "공동경비구역 JSA",
+      "year": 2000,
+      "director": "박찬욱",
+      "aliases": [
+        "공동경비구역 JSA"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 5,
+        "outDegree": 2,
+        "goldInDegree": 0,
+        "weightedInDegree": 6,
+        "pageRank": 0.017231734860251088
+      }
+    },
+    {
+      "id": "film_0037",
+      "titleKo": "플란다스의 개",
+      "year": 2000,
+      "director": "봉준호",
+      "aliases": [
+        "플란다스의 개"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0038",
+      "titleKo": "공공의 적",
+      "year": 2002,
+      "director": "강우석",
+      "aliases": [
+        "공공의 적"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0039",
+      "titleKo": "복수는 나의 것",
+      "year": 2002,
+      "director": "박찬욱",
+      "aliases": [
+        "복수는 나의 것"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 2,
+        "outDegree": 0,
+        "goldInDegree": 1,
+        "weightedInDegree": 2.666667,
+        "pageRank": 0.020249137359386826
+      }
+    },
+    {
+      "id": "film_0040",
+      "titleKo": "재밌는 영화",
+      "year": 2002,
+      "director": "장규성",
+      "aliases": [
+        "재밌는 영화"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 4,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0041",
+      "titleKo": "살인의 추억",
+      "year": 2003,
+      "director": "봉준호",
+      "aliases": [
+        "살인의 추억"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": 2
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 4,
+        "outDegree": 3,
+        "goldInDegree": 3,
+        "weightedInDegree": 8.666667,
+        "pageRank": 0.03458179923027586
+      }
+    },
+    {
+      "id": "film_0042",
+      "titleKo": "올드보이",
+      "year": 2003,
+      "director": "박찬욱",
+      "aliases": [
+        "올드보이"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": 5
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 2,
+        "outDegree": 0,
+        "goldInDegree": 1,
+        "weightedInDegree": 4.333333,
+        "pageRank": 0.015974483818945166
+      }
+    },
+    {
+      "id": "film_0044",
+      "titleKo": "지구를 지켜라!",
+      "year": 2003,
+      "director": "장준환",
+      "aliases": [
+        "지구를 지켜라!"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 1,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0.666667,
+        "pageRank": 0.01094547965372148
+      }
+    },
+    {
+      "id": "film_0045",
+      "titleKo": "인어공주",
+      "year": 2004,
+      "director": "박흥식",
+      "aliases": [
+        "인어공주"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0046",
+      "titleKo": "사랑해, 말순씨",
+      "year": 2005,
+      "director": "박흥식",
+      "aliases": [
+        "사랑해, 말순씨"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0047",
+      "titleKo": "야수와 미녀",
+      "year": 2005,
+      "director": "이계벽",
+      "aliases": [
+        "야수와 미녀"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0048",
+      "titleKo": "괴물",
+      "year": 2006,
+      "director": "봉준호",
+      "aliases": [
+        "괴물"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 3,
+        "outDegree": 0,
+        "goldInDegree": 1,
+        "weightedInDegree": 4.333333,
+        "pageRank": 0.03810210214593547
+      }
+    },
+    {
+      "id": "film_0049",
+      "titleKo": "애정결핍이 두 남자에게 미치는 영향",
+      "year": 2006,
+      "director": "김성훈",
+      "aliases": [
+        "애정결핍이 두 남자에게 미치는 영향"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0051",
+      "titleKo": "추격자",
+      "year": 2008,
+      "director": "나홍진",
+      "aliases": [
+        "추격자"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 1,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 1.333333,
+        "pageRank": 0.01094547965372148
+      }
+    },
+    {
+      "id": "film_0052",
+      "titleKo": "마더",
+      "year": 2009,
+      "director": "봉준호",
+      "aliases": [
+        "마더"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 2,
+        "outDegree": 0,
+        "goldInDegree": 0,
+        "weightedInDegree": 1.333333,
+        "pageRank": 0.015974483818945166
+      }
+    },
+    {
+      "id": "film_0053",
+      "titleKo": "박쥐",
+      "year": 2009,
+      "director": "박찬욱",
+      "aliases": [
+        "박쥐"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 1,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 2,
+        "pageRank": 0.01094547965372148
+      }
+    },
+    {
+      "id": "film_0054",
+      "titleKo": "불청객",
+      "year": 2010,
+      "director": "이응일",
+      "aliases": [
+        "불청객"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0055",
+      "titleKo": "시",
+      "year": 2010,
+      "director": "이창동",
+      "aliases": [
+        "시"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": 7
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 1,
+        "outDegree": 0,
+        "goldInDegree": 0,
+        "weightedInDegree": 0.666667,
+        "pageRank": 0.01094547965372148
+      }
+    },
+    {
+      "id": "film_0056",
+      "titleKo": "악마를 보았다",
+      "year": 2010,
+      "director": "김지운",
+      "aliases": [
+        "악마를 보았다"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0057",
+      "titleKo": "의형제",
+      "year": 2010,
+      "director": "장훈",
+      "aliases": [
+        "의형제"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 2,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0058",
+      "titleKo": "하녀",
+      "year": 2010,
+      "director": "임상수",
+      "aliases": [
+        "하녀"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0059",
+      "titleKo": "7광구",
+      "year": 2011,
+      "director": "김지훈",
+      "aliases": [
+        "7광구"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0062",
+      "titleKo": "건축학개론",
+      "year": 2012,
+      "director": "이용주",
+      "aliases": [
+        "건축학개론"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0063",
+      "titleKo": "내가 살인범이다",
+      "year": 2012,
+      "director": "정병길",
+      "aliases": [
+        "내가 살인범이다"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0064",
+      "titleKo": "돈의 맛",
+      "year": 2012,
+      "director": "임상수",
+      "aliases": [
+        "돈의 맛"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0065",
+      "titleKo": "두레소리",
+      "year": 2012,
+      "director": "조정래",
+      "aliases": [
+        "두레소리"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0066",
+      "titleKo": "몽타주",
+      "year": 2013,
+      "director": "정근섭",
+      "aliases": [
+        "몽타주"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0067",
+      "titleKo": "베를린",
+      "year": 2013,
+      "director": "류승완",
+      "aliases": [
+        "베를린"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 2,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0068",
+      "titleKo": "한공주",
+      "year": 2013,
+      "director": "이수진",
+      "aliases": [
+        "한공주"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0069",
+      "titleKo": "도리화가",
+      "year": 2015,
+      "director": "이종필",
+      "aliases": [
+        "도리화가"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0071",
+      "titleKo": "성실한 나라의 앨리스",
+      "year": 2015,
+      "director": "안국진",
+      "aliases": [
+        "성실한 나라의 앨리스"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0072",
+      "titleKo": "곡성",
+      "year": 2016,
+      "director": "나홍진",
+      "aliases": [
+        "곡성"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 1,
+        "outDegree": 1,
+        "goldInDegree": 1,
+        "weightedInDegree": 2,
+        "pageRank": 0.01094547965372148
+      }
+    },
+    {
+      "id": "film_0073",
+      "titleKo": "대배우",
+      "year": 2016,
+      "director": "석민우",
+      "aliases": [
+        "대배우"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0074",
+      "titleKo": "부산행",
+      "year": 2016,
+      "director": "연상호",
+      "aliases": [
+        "부산행"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 4,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 6,
+        "pageRank": 0.026032492149392537
+      }
+    },
+    {
+      "id": "film_0075",
+      "titleKo": "비밀은 없다",
+      "year": 2016,
+      "director": "이경미",
+      "aliases": [
+        "비밀은 없다"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0076",
+      "titleKo": "아가씨",
+      "year": 2016,
+      "director": "박찬욱",
+      "aliases": [
+        "아가씨"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0077",
+      "titleKo": "우리들",
+      "year": 2016,
+      "director": "윤가은",
+      "aliases": [
+        "우리들"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0078",
+      "titleKo": "강철비",
+      "year": 2017,
+      "director": "양우석",
+      "aliases": [
+        "강철비"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 2,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0079",
+      "titleKo": "공조",
+      "year": 2017,
+      "director": "김성훈",
+      "aliases": [
+        "공조"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 2,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0081",
+      "titleKo": "희생부활자",
+      "year": 2017,
+      "director": "곽경택",
+      "aliases": [
+        "희생부활자"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0082",
+      "titleKo": "물괴",
+      "year": 2018,
+      "director": "허종호",
+      "aliases": [
+        "물괴"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0083",
+      "titleKo": "죄 많은 소녀",
+      "year": 2018,
+      "director": "김의석",
+      "aliases": [
+        "죄 많은 소녀"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0084",
+      "titleKo": "창궐",
+      "year": 2018,
+      "director": "김성훈",
+      "aliases": [
+        "창궐"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0086",
+      "titleKo": "기묘한 가족",
+      "year": 2019,
+      "director": "이민재",
+      "aliases": [
+        "기묘한 가족"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0087",
+      "titleKo": "기생충",
+      "year": 2019,
+      "director": "봉준호",
+      "aliases": [
+        "기생충"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": 3
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 3,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0088",
+      "titleKo": "사바하",
+      "year": 2019,
+      "director": "장재현",
+      "aliases": [
+        "사바하"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0089",
+      "titleKo": "#살아있다",
+      "year": 2020,
+      "director": "조일형",
+      "aliases": [
+        "#살아있다"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0090",
+      "titleKo": "소리꾼",
+      "year": 2020,
+      "director": "조정래",
+      "aliases": [
+        "소리꾼"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0091",
+      "titleKo": "헤어질 결심",
+      "year": 2022,
+      "director": "박찬욱",
+      "aliases": [
+        "헤어질 결심"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": 8
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0092",
+      "titleKo": "거미집",
+      "year": 2023,
+      "director": "김지운",
+      "aliases": [
+        "거미집"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0093",
+      "titleKo": "괴인",
+      "year": 2023,
+      "director": "이정홍",
+      "aliases": [
+        "괴인"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0094",
+      "titleKo": "베테랑2",
+      "year": 2024,
+      "director": "류승완",
+      "aliases": [
+        "베테랑2"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    },
+    {
+      "id": "film_0095",
+      "titleKo": "좀비딸",
+      "year": 2025,
+      "director": "필감성",
+      "aliases": [
+        "좀비딸"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "published",
+      "metrics": {
+        "inDegree": 0,
+        "outDegree": 1,
+        "goldInDegree": 0,
+        "weightedInDegree": 0,
+        "pageRank": 0.0059164754884977935
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_0001",
+      "citingFilmId": "film_0087",
+      "citedFilmId": "film_0001",
+      "relationType": "influence",
+      "signal": "director_declared",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "김기영 감독님이 살아계시다면 이 영화를 보여드리고 싶은데, 98년에 돌아가셨다. 감독님 영화를 보면 부자의 욕망이 드러나고, 외부인이 들어오는 게 얼마나 위험한지가 나온다. 외부의 침투에 관련해선 그분이 대가다. '하녀'에서 계단의 쓰임새도 인상 깊었다. ('기생충'이랑 '하녀'를 동시상영 하면 재밌을 거 같다) - 봉준호, 한국일보 인터뷰 2019.05.30. 칸 기자회견에서도 \"김기영 감독의 '하녀' '충녀'를 보면서 기운을 받으려고 했다\"고 재차 언급 (이데일리).",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.hankookilbo.com/News/Read/201905301471091137",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0002",
+      "citingFilmId": "film_0058",
+      "citedFilmId": "film_0001",
+      "relationType": "remake_official",
+      "signal": "director_declared",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "기사에서 \"'하녀'는 김기영 감독의 원작을 리메이크한 작품\"이라고 명시하며, 임상수 감독은 \"원작 '하녀'가 하녀와 주인집과의 갈등에 의한 중산층의 붕괴를 그렸다면, 이번 '하녀'는 계급간의 갈등보다는 인간 자체에 대한 고찰을 한다\"고 원작과의 차이를 직접 설명했다. - 스타뉴스 임상수 인터뷰 2010.05.12",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.starnewskorea.com/movie/2010/05/12/2010051205441757057",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0003",
+      "citingFilmId": "film_0092",
+      "citedFilmId": "film_0001",
+      "relationType": "homage",
+      "signal": "director_declared",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "김기영 감독 유족의 상영금지 가처분 소송에 대해 제작사 측은 70년대 영화를 자연스럽게 오마주하게 됐고 \"김지운 감독 역시 이만희 감독의 '마의 계단', 앨프리드 히치콕 감독의 '사이코' 그리고 우리나라 대표 감독인 김기영 감독의 '하녀' 느낌이 풍겨날 뿐\"이라고 밝혔다 (제작사 공식 입장, 이후 유족과 합의). 기자 시사 리뷰에서도 \"영화 속 등장하는 흑백 영화 '거미집'은 '하녀' '충녀'를 만든 당대 유명 연출자 김기영 감독의 작품들을 오마주한 듯하다\"고 서술 (파이낸셜뉴스 정유진 기자).",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://hugs.fnnews.com/article/202309141215459439",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0004",
+      "citingFilmId": "film_0053",
+      "citedFilmId": "film_0001",
+      "relationType": "influence",
+      "signal": "director_declared",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "박찬욱 감독 직접 발언: \"Director Kim Ki-young has been a great influence to me. 'Thirst' is a particularly good example of that. Anyone who has seen his film 'The Housemaid,' will be able to tell straight away.\" (Emanuel Levy 인터뷰).…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://namu.wiki/w/%EA%B9%80%EA%B8%B0%EC%98%81(1919)",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        },
+        {
+          "url": "https://emanuellevy.com/interviews/thirst-interview-with-korean-helmer-park-chan-wook-2/",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0005",
+      "citingFilmId": "film_0064",
+      "citedFilmId": "film_0001",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "\"<돈의 맛> 역시 그가 리메이크 하녀 영화에서 추구한 새로운 하녀 영화와의 연장선상에서 접근하는 것이 이 영화에 대한 적절한 읽기일 것이다.\" 같은 글에서 평론가 정문영은 김기영을 \"한국 하녀 영화의 원조\"로 규정하고 돈의 맛을 그 장르 계보의 연장(하남 영화)으로 읽는다. - 정문영, 르몽드 디플로마티크 시네마 크리티크. 임상수 본인도 \"'돈의 맛'은 '하녀'의 아쉬움에서 출발했다\"고 밝혔으나 이는 직접적으로는 자신의 2010년 리메이크를 가리킴 (쿠키뉴스).",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.ilemonde.com/news/articleView.html?idxno=16469",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0006",
+      "citingFilmId": "film_0063",
+      "citedFilmId": "film_0041",
+      "relationType": "influence",
+      "signal": "director_declared",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "정병길 감독: \"'내가 살인범이다'는 '살인의 추억'에서 모티프를 얻었다. 화성 연쇄살인사건에 대한 관심이 있었고, 작품을 조조로 보게 됐다. 혼자 보고 있는 줄 알았는데, 엔딩 크레딧이 끝날 때까지 어떤 아저씨가 앉아있었다. '혹시 범인이 아닐까'라고 생각했다\" - 살인의 추억 극장 관람 경험에서 '공소시효 만료 후 범인이 나타난다면'이라는 착상을 얻어 시나리오를 썼다고 직접 밝힘.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://biz.heraldcorp.com/article/10290863",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0007",
+      "citingFilmId": "film_0072",
+      "citedFilmId": "film_0041",
+      "relationType": "influence",
+      "signal": "director_declared",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "기자가 \"봉준호 감독의 '살인의 추억'과 플롯 구조가 닮은 게 아닌가\"라고 묻자 나홍진 감독: \"봉준호 감독의 영향을 안 받았다면 거짓말일 것이다. 박찬욱, 김지운 감독 등 좋아하는 감독들의 영화를 무진장 많이 봤다. '살인의 추억'도 수 백번 봤다. '곡성'을 하면서 '살인의 추억'을 떠올리지는 않았지만 영향을 아마도 받았을 것이다.\"",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.starnewskorea.com/movie/2016/05/07/2016050616204275937",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0008",
+      "citingFilmId": "film_0041",
+      "citedFilmId": "film_0017",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "씨네21 이두용 특집(김소미 기자): \"복원된 <최후의 증인>을 보면서 <살인의 추억>(2003)을 떠올린 이들이 있다는 사실이 흥미롭다. 정종화 한국영상자료원 선임연구원은 '한국 현대사의 음울한 공기를 공유하고 있다는 점에서, 크고 작은 권력들이 자행하는 폭력의 역사를 여실히 드러낸다는 점에서' <최후의 증인>을 '<살인의 추억>이 한국영화 계보에서 뚝 떨어져나온 작품이 아니라는 생각'이 들게 하는 영화라고 짚었다.\" - 계보적 연결의 평론 서술이며, 봉준호의 직접 영향 인정은 아님.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://cine21.com/news/view/?mag_id=104470",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0009",
+      "citingFilmId": "film_0066",
+      "citedFilmId": "film_0041",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "노컷뉴스 기사 제목 \"김상경, 15년만에 형사 '살인의추억 미제사건 몽타주서 해결한 느낌'\" 및 두 영화 모두 주연을 맡은 김상경의 발언: \"이번에는 마치 살인의 추억의 미제사건을 몽타주를 통해 해결하는 것 같은 느낌을 받기도 했다\" - 미제사건·공소시효 소재와 김상경 캐스팅을 통해 언론·관객이 살인의 추억과의 상호텍스트로 소비('속 시원한 살인의 추억을 본 느낌' 등 시사평). 제작진의 명시적 참조 선언은 확인 못함.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.nocutnews.co.kr/news/1024052",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0010",
+      "citingFilmId": "film_0087",
+      "citedFilmId": "film_0006",
+      "relationType": "visual_influence",
+      "signal": "director_declared",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "봉준호(제72회 칸국제영화제 기자회견, 2019-05-23): \"김기영 감독님의 '하녀'라든가 '충녀'에서 계단 이미지를 가져왔다. 김기영 감독님의 계단의 기운을 받으려고 했다.\"",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1005278041",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0011",
+      "citingFilmId": "film_0010",
+      "citedFilmId": "film_0002",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "1960년대 한국 리얼리즘은 유현목의 〈오발탄〉(1960)을 경유하여 이만희의 〈삼포가는 길〉(1975)로 이어지면서 1980년대 〈바람 불어 좋은 날〉과 1990년대 박광수의 〈그들도 우리처럼〉(1990)으로 이어진다. (문학산, 영화평론가·부산대 교수)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "http://www.cultura.co.kr/news/articleView.html?idxno=3826",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0012",
+      "citingFilmId": "film_0015",
+      "citedFilmId": "film_0002",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "1960년대 한국 리얼리즘은 유현목의 〈오발탄〉(1960)을 경유하여 이만희의 〈삼포가는 길〉(1975)로 이어지면서 1980년대 〈바람 불어 좋은 날〉과 1990년대 박광수의 〈그들도 우리처럼〉(1990)으로 이어진다. (문학산, 영화평론가·부산대 교수 - 이장호의 리얼리즘 행보를 다룬 특집 기사)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "http://www.cultura.co.kr/news/articleView.html?idxno=3826",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0013",
+      "citingFilmId": "film_0026",
+      "citedFilmId": "film_0002",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "1960년대 한국 리얼리즘은 유현목의 〈오발탄〉(1960)을 경유하여 이만희의 〈삼포가는 길〉(1975)로 이어지면서 1980년대 〈바람 불어 좋은 날〉과 1990년대 박광수의 〈그들도 우리처럼〉(1990)으로 이어진다. (문학산, 영화평론가·부산대 교수)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "http://www.cultura.co.kr/news/articleView.html?idxno=3826",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0014",
+      "citingFilmId": "film_0047",
+      "citedFilmId": "film_0042",
+      "relationType": "homage",
+      "signal": "director_declared",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "\"'야수와 미녀'(감독 이계벽·제작 시오피름)가 박찬욱 감독의 '올드보이'에 오마주(hommage, 경의)를 바쳐 화제를 모으고 있다.\" ... \"이는 '올드보이'의 조감독 출신으로 '야수와 미녀'를 통해 데뷔한 이계벽 감독 역시 가장 좋아하는 장면. 이계벽 감독은 이를 첫 영화에 녹여내기로 결심하고 시나리오과정에서부터 계획을 세웠다.\" (올드보이의 분할화면 반전 연출을 오마주; 박찬욱 감독도 VIP시사회에서 이 장면을 보고 흐뭇한 미소를 지었다는 후문, 스타뉴스 2005-10-31)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.starnewskorea.com/stview.php?no=2005103110352072631",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0015",
+      "citingFilmId": "film_0049",
+      "citedFilmId": "film_0042",
+      "relationType": "parody",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "\"불편하고 어색한 이야기 사이에서 이 영화가 가장 빛나는 순간은 동철동과 동현이 <링>, <너는 내 운명>, <올드 보이> 등의 유명 영화를 패러디하는 순간이다.\" (프레시안 [뷰 포인트] 장성란 기자). 한국어 위키백과 올드보이 문서도 \"《올드보이》의 장면은 후에 영화 《야수와 미녀》, 《애정결핍이 두 남자에게 미치는 영향》에서 패러디 되기도 하였다\"로 교차 확인됨.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.pressian.com/pages/articles/82171",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0017",
+      "citingFilmId": "film_0023",
+      "citedFilmId": "film_0009",
+      "relationType": "reference",
+      "signal": "critic",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "최인호 작가가 1975년에 참여한 영화 〈바보들의 행진〉에서 '고래잡이'라는 모티브가 나오는데, 기성 체제에 반항하는 한 대학생이 고래를 잡으러 동해바닷가로 떠난다는 설정은 그 단적인 예다. (...) 하길종 감독의 〈바보들의 행진〉에서는 송창식이 부른 〈고래사냥〉이 주제가로 쓰였는데, 바로 그 주제가를 제목으로 전면에 내세운 〈고래사냥〉에서는 주인공으로 등장하는 김수철이 〈나도야 간다〉라는 주제곡을 불렀는데, 묘한 대조를 불러일으키기도 했다. - 김시무(영화평론가), 쿨투라.…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cultura.co.kr/news/articleView.html?idxno=4775",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0018",
+      "citingFilmId": "film_0009",
+      "citedFilmId": "film_0008",
+      "relationType": "parody",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "사실 이 영화가 개봉하기 한 해 전에 개봉된 영화진흥공사 제작 국책 새마을영화인 임권택 감독의 〈아내들의 행진〉(임권택, 1974)을 떠올리게도 한다. 소설 『바보들의 행진』이 국책영화 〈아내들의 행진〉에게 빼앗길지도 모르는 권리를 영화가 다시 찾아오고 있다는 점에서 일종의 패러디라고 볼 만하다. - 전우형(건국대학교), 한국영상자료원 KMDb 한국영화사 에세이",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/history/contents/1705",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0019",
+      "citingFilmId": "film_0016",
+      "citedFilmId": "film_0009",
+      "relationType": "reference",
+      "signal": "critic",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "인기에 힘입어 속편으로 「병태와 영자」(하길종, 1979), 「병태와 영자(속)」(이강윤, 1980)이 제작되었다. - 한국민족문화대백과사전 '바보들의 행진' 항목. 바보들의 행진에서 시작된 병태·영자 캐릭터를 잇는 공식 시리즈 3편(영문 제목 'The March of Fools Part 3', 나무위키)으로, 하길종 사후 이강윤이 감독데뷔작으로 연출한 타 감독 속편.…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://encykorea.aks.ac.kr/Article/E0074606",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0021",
+      "citingFilmId": "film_0068",
+      "citedFilmId": "film_0055",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "씨네21 인터뷰(2014.4.22) 중 기자 질문: \"여러 인터뷰에서 <한공주>라는 제목이 이창동 감독의 <오아시스> 주인공 이름과 일치하는 건 우연이라고 밝혔지만 참 공교롭다. <오아시스>의 공주(문소리)도 극중에서 성폭행을 당한 인물이고, 이창동 감독의 다른 영화 <시>는 공주가 겪은 일과 유사한 사건에 눈길을 준 이야기가 수렴하는 윤리적 자문을 담은 이야기였다.\" 이수진 감독 답변: \"성은 바꿔봤지만 다른 이름은 떠올릴 수 없었다.…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://cine21.com/news/view/?mag_id=76387",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0022",
+      "citingFilmId": "film_0046",
+      "citedFilmId": "film_0030",
+      "relationType": "influence",
+      "signal": "director_declared",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "\"Assistant Director Park Heung-sik was influenced by particular scenes of Jung-won washing rice and teaching his father the VCR remote control, for his film Bravo, My Life!\" (영어 위키백과 'Christmas in August' Legacy 절; 각주는 2007-08-29 박흥식 감독 네이버 뉴스 인터뷰).…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Christmas_in_August",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0023",
+      "citingFilmId": "film_0045",
+      "citedFilmId": "film_0030",
+      "relationType": "homage",
+      "signal": "director_declared",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "\"The muffled weeping scene also found its way into My Mother, the Mermaid.\" (영어 위키백과 'Christmas in August' Legacy 절; 정원이 이불을 뒤집어쓰고 흐느끼는 장면이 박흥식 감독의 <인어공주>에 이어졌다는 서술로, 각주는 2007-08-29 박흥식 감독 인터뷰). 박흥식은 8월의 크리스마스 조감독 출신.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Christmas_in_August",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0024",
+      "citingFilmId": "film_0037",
+      "citedFilmId": "film_0030",
+      "relationType": "reference",
+      "signal": "public",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "[영문 위키 단독] \"Characters in Barking Dogs Never Bite and Girls' Night Out are shown, respectively, watching scenes of the VCR remote and lovers' stroll.\" (영어 위키백과 'Christmas in August' - 플란다스의 개 극중 인물이 정원이 아버지에게 비디오 리모컨 사용법을 가르치는 장면을 시청한다는 서술.…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Christmas_in_August",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0026",
+      "citingFilmId": "film_0062",
+      "citedFilmId": "film_0030",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "씨네21 이용주 감독 인터뷰에서 기자가 \"낡은 집, 나의 연애, 어머니와의 관계. 허진호 감독의 <8월의 크리스마스>와 <봄날은 간다>의 정서가 다분히 엿보인다\"고 지적. 단, 이용주 감독 본인은 \"딱히 영향을 받았다고 보긴 그렇고, 허진호 감독의 취향과 비슷한 거 같다\"며 직접 영향은 부인함(평론·기자 관찰 수준의 엣지).",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://cine21.com/news/view/?mag_id=69456",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0027",
+      "citingFilmId": "film_0091",
+      "citedFilmId": "film_0004",
+      "relationType": "homage",
+      "signal": "director_declared",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "박찬욱: \"김수용 감독의 영화 <안개>는 <헤어질 결심>의 시나리오를 쓰는 중에 봤다. <안개>라는 훌륭한 영화가 있다는 건 이미 알고 있었지만 본 것은 나중이었고, 특히 윤정희씨 캐릭터가 아주 모던하더라. 김수용 감독님의 앞서가는 감각은 영화의 원작인 <무진기행>과도 달랐다. 그 영화가 <헤어질 결심>에 영향을 준 바가 없다고는 말하지 못할 것 같다.…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://cine21.com/news/view/?mag_id=100265",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0028",
+      "citingFilmId": "film_0093",
+      "citedFilmId": "film_0029",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "이후에 <괴인>에 대해 곱씹을수록 그 인상은 사라졌고 구체적으로 단 하나의 작품만이 떠올랐다. 그것은 홍상수의 데뷔작인 <돼지가 우물에 빠진 날>이다. (...) 다시 말해 이 영화는 계보학적으로 추적이 가능하지만, 그것이 눈에 띄지 않는 새로운 영화다. - 오진우(평론가), 씨네21 비평 ''괴인'에 녹아든 시대 감각'",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://cine21.com/news/view/?mag_id=103910",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0029",
+      "citingFilmId": "film_0087",
+      "citedFilmId": "film_0005",
+      "relationType": "visual_influence",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "The closing sequence in the pouring rain beside a towering concrete wall where the stressed wife, in a white dress, collapses and loses her shoe as the rainwater washes it down the guttering clearly inspired Parasite (Bong Joon Ho has expressed his admiration for Kim's films)…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "http://jeremycprocessing.com/woman-of-fire/",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0030",
+      "citingFilmId": "film_0007",
+      "citedFilmId": "film_0003",
+      "relationType": "visual_influence",
+      "signal": "director_declared",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "그리고 내가 21살에 본 이만희 감독님의 〈만추〉는 충격적이었어요. 이만희 감독은 천재임에 틀림없어요. 〈만추〉는 정말 영상미가 대단했으니까. (중략) 나는 그런 영향을 받아서인지, 〈별들의 고향〉에서도 플래시백으로 과거로 갈 때, 신성일이가 담배를 던졌는데, 떨어지는 건 볼펜이 떨어지고, 또 스틸처럼 멈춰 가면서 쇼트를 진행하고, 내 영화의 그런 신들이 아마도 이만희 감독한테서 영향을 받아서 발전시킨 게 아닌가 하는 생각이 들어요. (이장호 감독, 데뷔 50년 쿨투라 인터뷰)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "http://www.cultura.co.kr/news/articleView.html?idxno=3899",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0031",
+      "citingFilmId": "film_0014",
+      "citedFilmId": "film_0007",
+      "relationType": "reference",
+      "signal": "critic",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "하길종 감독에 의해 연출된 <별들의 고향> 속편으로 (한국영상자료원 시네마테크KOFA 프로그램 해설). 이장호가 아닌 하길종이 연출한 공식 속편으로, 신성일이 경아를 잃은 슬픔에 빠진 화가 문오 역을 다시 연기하며 전작의 서사를 직접 이어간다.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.koreafilm.or.kr/movie/PM_000915",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0032",
+      "citingFilmId": "film_0011",
+      "citedFilmId": "film_0007",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "<별들의 고향>은 <영자의 전성시대>와 <겨울여자>의 연속적 흥행 성공에 힘입어 호스티스 멜로드라마로 명명되었다. '경아 신드롬'을 일으킨 여주인공 경아는 영자, 이화와 더불어 1970년대를 대표하는 아이콘이 되었고, <별들의 고향>은 나름대로의 변천을 겪으며 1980년대까지 지배적 장르로 군림한 호스티스 멜로드라마의 전범이 되었다. (권은선 중부대 교수, KMDb 한국영화 100선 해설)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/story/154/4322",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        },
+        {
+          "url": "https://en.seoul.co.kr/news/newsView.php?id=20190730018001",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0033",
+      "citingFilmId": "film_0013",
+      "citedFilmId": "film_0007",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "<별들의 고향>은 <영자의 전성시대>와 <겨울여자>의 연속적 흥행 성공에 힘입어 호스티스 멜로드라마로 명명되었다. (중략) <별들의 고향>은 나름대로의 변천을 겪으며 1980년대까지 지배적 장르로 군림한 호스티스 멜로드라마의 전범이 되었다. (권은선, KMDb 한국영화 100선 해설 - 겨울여자에 대해서는 직접 영향 서술이 아닌 장르 계보상의 연결이므로 low)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/story/154/4322",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0034",
+      "citingFilmId": "film_0019",
+      "citedFilmId": "film_0007",
+      "relationType": "reference",
+      "signal": "public",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "《별들의 고향 3》은 한국에서 제작된 이경태 감독의 1981년 멜로/로맨스 영화이다. 유지인 등이 주연으로 출연하였고 (중략) 최인호가 각본을 맡았다. (위키백과) - 원작자 최인호가 직접 각본을 쓴 시리즈 3편으로, KMDb 상세페이지(K/03544)에도 별들의 고향(1974)·속 별들의 고향(1978)과 관련작으로 연결되어 있다. 서사상으로는 속편(1978)의 수경 이야기를 잇는다.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://ko.wikipedia.org/wiki/%EB%B3%84%EB%93%A4%EC%9D%98_%EA%B3%A0%ED%96%A5_3",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0035",
+      "citingFilmId": "film_0021",
+      "citedFilmId": "film_0011",
+      "relationType": "reference",
+      "signal": "critic",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "[공식 속편, 타 감독] KMDB 줄거리: '윤락녀 영자가 사우나탕에서 일하는 창수를 만나 사랑하게 되지만, 전남편 동혁의 출옥으로 삼각관계가 형성된다.' - 1975년작의 영자·창수 캐릭터를 그대로 잇는 속편(제목의 '속(續)'과 영문 부제 Sequel로 명시)이며, KMDB 관련영화 항목이 '영자의 전성시대 (김호선, 1975)'를 연결하고 있다. 원작의 남주인공 송재호의 장남 송영춘이 속편 주인공으로 데뷔했다.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/db/kor/detail/movie/K/03600",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0036",
+      "citingFilmId": "film_0024",
+      "citedFilmId": "film_0011",
+      "relationType": "remake_official",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "KMDB의 '영자의 전성시대'(1975) 항목 관련영화 목록에 '87 영자의 전성시대 (유진선, 1987)'가 명시되어 있다. 같은 조선작 원작을 1980년대 배경으로 다시 영화화한 작품으로, 제목의 '87'이 1975년 흥행작의 현대판임을 표시한다. 위키백과: '《87 영자의 전성시대》는 한국에서 제작된 유진선 감독의 1987년 드라마, 멜로/로맨스 영화이다.' (조선작 원작 표기)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/db/kor/detail/movie/K/02874",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0037",
+      "citingFilmId": "film_0012",
+      "citedFilmId": "film_0011",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "KMDB '영자의 전성시대'(1975) 항목 제작 후일담: '이 영화가 흥행에 성공하자 <창수의 전성시대> <미스 염의 순정 시절> 등 아류작이 속출했다.' 보조 근거(위키백과 염복순 항목): '1976년 김선경이 감독을 맡은 《미스 염의 순정시절》 등 다른 영화의 아류 작품에 출연했다.' - 원작 주연 염복순의 스타 이미지를 그대로 차용한 모방작.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/db/kor/detail/movie/K/02874",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0038",
+      "citingFilmId": "film_0020",
+      "citedFilmId": "film_0015",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "물론 <바람불어 좋은 날> 이후, <어둠의 자식들>(1981), <난장이가 쏘아올린 작은 공>(1981), <꼬방동네 사람들>(1982)와 같이 어두운 분위기의 작품, 가난한 이들을 전면에 내세워 사회의 이면을 드러내는 작품들이 줄줄이 제작·개봉되었다. 예상컨대 이전에는 시도조차 하지 못했을 이러한 작품들의 등장은 <바람 불어 좋은 날>에서 보여준 것과 같은 '리얼한' 소재가 무리 없는 검열을 지나 개봉한 전례가 큰 영향을 미쳤을 것이다. (송아름, 영화사연구자, 한국영상자료원 KMDb)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/history/contents/2607",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0039",
+      "citingFilmId": "film_0018",
+      "citedFilmId": "film_0015",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "물론 <바람불어 좋은 날> 이후, <어둠의 자식들>(1981), <난장이가 쏘아올린 작은 공>(1981), <꼬방동네 사람들>(1982)와 같이 어두운 분위기의 작품, 가난한 이들을 전면에 내세워 사회의 이면을 드러내는 작품들이 줄줄이 제작·개봉되었다. 예상컨대 이전에는 시도조차 하지 못했을 이러한 작품들의 등장은 <바람 불어 좋은 날>에서 보여준 것과 같은 '리얼한' 소재가 무리 없는 검열을 지나 개봉한 전례가 큰 영향을 미쳤을 것이다. (송아름, 영화사연구자, 한국영상자료원 KMDb)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/history/contents/2607",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0040",
+      "citingFilmId": "film_0025",
+      "citedFilmId": "film_0015",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "옥외 광고탑에서 외치던 세상을 향한 목소리가 제 멋대로 해석되는 과정을 보여주며 1980년대의 진실에 대해 풍자했던 가난한 청년들의 영화 <칠수와 만수>가 1988년 개봉될 수 있었던 것 역시 <바람 불어 좋은 날>과 여타의 영화들이 놓인 시기적 차이와 함께 생각해볼 수 있을 것이다. (송아름, 영화사연구자, 한국영상자료원 KMDb)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/history/contents/2607",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0041",
+      "citingFilmId": "film_0041",
+      "citedFilmId": "film_0015",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "살인의 추억, 2003, 봉준호(6) : <바람 불어 좋은 날>의 '봉준호 버전'. 1990년대 이후 한국영화사는 이 영화를 기점으로 나뉜다. (전찬일 영화평론가, '전찬일의 한국영화 100선', 쿨투라) - 두 영화가 각 시대의 터닝포인트라는 계보적 유비로, 직접적 영향 서술은 아님.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "http://www.cultura.co.kr/news/articleView.html?idxno=688",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0042",
+      "citingFilmId": "film_0090",
+      "citedFilmId": "film_0027",
+      "relationType": "influence",
+      "signal": "director_declared",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "자퇴를 해야겠다고 생각하던 차에 '서편제'를 봤는데 너무 충격을 받았어요. 충격인지 감동인지 도저히 해석이 안돼서 영화를 몇 번이나 봤죠. (...) '서편제'가 없었다면 지금의 인생도 없었다. (...) 서편제에서도 기본 텍스트가 심청가였는데 심청가의 기원, 근원설화 등을 찾아서 여기까지 온 것 같아요.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.sedaily.com/NewsVIew/1Z47S31EOL",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0043",
+      "citingFilmId": "film_0065",
+      "citedFilmId": "film_0027",
+      "relationType": "influence",
+      "signal": "director_declared",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "대학시절 영화 '서편제'를 보고 엄청 울었고, 영화학과를 다니면서도 고수(鼓手)가 되기 위해 돌아다녔던 (조 감독) - 두레소리(국악 소재 데뷔작) 제작 배경을 다룬 기사에서 감독의 국악 입문 계기로 서편제를 명시.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.hankookilbo.com/News/Read/201204301115531486",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0044",
+      "citingFilmId": "film_0069",
+      "citedFilmId": "film_0027",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "'서편제' 이후 20여년만이다. 판소리를 소재로 한 영화 '도리화가'가 개봉을 앞두고 흥행 기대감이 고조되고 있다. (...) 1년 가까이 소리꾼으로서 배우들이 기울인 노력이 '서편제'를 뛰어넘을 수 있을지 주목된다. - 언론이 도리화가를 서편제의 계보·준거점 위에서 반복 비교. 평론가 심영섭도 \"그동안 판소리 영화는 '서편제' 그림자 속에 한의 정서를 벗어나지 못했다\"고 서술(서울경제 https://www.sedaily.com/NewsVIew/1VO6GIE5WU).…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "http://m.sportsworldi.com/view/20151105000694",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0045",
+      "citingFilmId": "film_0040",
+      "citedFilmId": "film_0032",
+      "relationType": "parody",
+      "signal": "critic",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "씨네21(2002-04-06, '패러디 영화, <재밌는 영화>'): 패러디 대상으로 \"<친구> <거짓말> <공동경비구역 JSA> <반칙왕> <서편제> <박하사탕> <비트> <비천무> <여고괴담>\" 등을 명시. 화장품신문(2002-03-28, '한국영화 명장면 재밌는 영화로 다시 본다'): \"김수로는 '박하사탕'의 설경구와 '넘버3'의 송강호로 분해 연극계 선배들이 영화에서 보인 업적을 승화, 발전시키겠다는 의지를 보이기도 했다.…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://cine21.com/news/view/?mag_id=8632",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0046",
+      "citingFilmId": "film_0032",
+      "citedFilmId": "film_0028",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "무등일보(2021-05-13, 김혜진 기자, '꽃잎·박하사탕·화려한휴가·택시운전사···깊은 울림 담겼다'): '오월 영화'의 시작을 1996년 '꽃잎'으로 서술한 뒤 \"이어 2000년 개봉한 영화 '박하사탕'은 80년 5월의 가해자의 삶에 대해 다뤘다.\" - 5.18 영화 계보에서 꽃잎(피해자 서사)의 뒤를 잇는 작품(가해자 서사로의 전환)으로 자리매김하는 서술. 직접적 영향·오마주 주장은 아니어서 low.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://m.mdilbo.com/detail/NezemK/647134",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0047",
+      "citingFilmId": "film_0040",
+      "citedFilmId": "film_0033",
+      "relationType": "parody",
+      "signal": "critic",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "영화의 큰 줄거리는 우선 <쉬리>를 본떴다. 다만 <쉬리>에 나오는 북한의 특수공작원이 여기서는 일본 극우 무장단체 '천군파'로 대치됐다. 가장 위험한 천군파 조직원은 하나코다. 그는 <쉬리>의 남파 공작원 이방희처럼 얼굴을 완전히 뜯어고친 뒤(고치기 전 박경림, 고친 뒤 김정은) 한국정보국 요원 황보(임원희)에게 접근한다.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://cine21.com/news/view/?mag_id=8632",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0048",
+      "citingFilmId": "film_0057",
+      "citedFilmId": "film_0033",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "'의형제'는 첩보원과 남자의 우정 등 닮은 꼴 설정으로 '쉬리'(620만명)와 'JSA'(580만명)의 뒤를 이은 대박 '분단 영화'로 평가 받는다.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.hankookilbo.com/News/Read/201002222364046858",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0049",
+      "citingFilmId": "film_0078",
+      "citedFilmId": "film_0033",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "김형석(영화 저널리스트) 칼럼: \"'의형제'(2010) '간첩'(2012) '베를린'(2013) '은밀하게 위대하게'(2013) '동창생'(2013) '용의자'(2013) '공조'(2017) '브이아이피'(2017) '강철비'(2017) '인랑'(2018)… 그러면서 장르의 법칙으로 분단 상황을 해소하려는 경향은 더욱 강해졌다. (중략) 그런 점에서 이 영화들은 '쉬리'의 후예들이었고, 분단을 토대로 한 장르 판타지였다.\"",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.hankookilbo.com/News/Read/201808131040793684",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0050",
+      "citingFilmId": "film_0079",
+      "citedFilmId": "film_0033",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "김형석(영화 저널리스트) 칼럼이 '공조'(2017)를 제목으로 명시하며: \"이 영화들은 일정 정도 거리를 둔 채 분단 현실을 반영하고, 갈등 상황을 극화하고, 그것을 주류 상업 영화의 문법으로 포장했다. (중략) 그런 점에서 이 영화들은 '쉬리'의 후예들이었고, 분단을 토대로 한 장르 판타지였다.\"",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.hankookilbo.com/News/Read/201808131040793684",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0051",
+      "citingFilmId": "film_0067",
+      "citedFilmId": "film_0033",
+      "relationType": "reference",
+      "signal": "public",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "일부 대중은 한석규가 연기한 '베를린'의 정진수가 \"영화 '쉬리'에서 한석규가 맡았던 유중원의 미래 모습\"이라고 해석했고, 기사에 따르면 \"실제 '베를린' 내에서 정진수의 대사 중에는 유중원의 행적을 연상할만한 것들이 있기도 했다.\" 류승완 감독은 이에 대해 \"이 같은 의견이 나올 줄 알았다면 캐릭터 이름을 유중원으로 할 걸 그랬다\"고 반응했다(의도된 참조는 아니라는 취지).",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "http://theviewers.co.kr/View.aspx?No=124085",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0052",
+      "citingFilmId": "film_0040",
+      "citedFilmId": "film_0035",
+      "relationType": "parody",
+      "signal": "critic",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "임원희는 '인정사정 볼 것 없다'에서 안성기의 40계단 살인장면을 새롭게 연출한다. (화장품신문 기사) / 나무위키 각주도 동일 장면을 확인: \"3년 뒤 제작된 재밌는 영화에서는 이 장면이 분식 장수로 위장한 일본인 공작원에게 케찹을 맞고 어묵 꼬치에 찔리는 장면으로 패러디된다.\"",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.beautynury.com/news/view/7847/cat/40/page/3690",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0053",
+      "citingFilmId": "film_0038",
+      "citedFilmId": "film_0035",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "그리고 그 기약대로, 새로운 세기의 한국 경찰영화를 열어젖힌 것은 강철중(<공공의 적>)과 박두만(<살인의 추억>)이라는 영구의 직계 후예들이었다. (한국영화걸작선, 조민준)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/story/10/895",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0054",
+      "citingFilmId": "film_0041",
+      "citedFilmId": "film_0035",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "그리고 그 기약대로, 새로운 세기의 한국 경찰영화를 열어젖힌 것은 강철중(<공공의 적>)과 박두만(<살인의 추억>)이라는 영구의 직계 후예들이었다. (한국영화걸작선, 조민준)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/story/10/895",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0055",
+      "citingFilmId": "film_0094",
+      "citedFilmId": "film_0035",
+      "relationType": "visual_influence",
+      "signal": "director_declared",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "우선 자연환경이 영향을 주는 액션신을 좋아하고 찍고 싶어 한다. 그런데 아무래도 예산과 직결되기 때문에 준비하다가 포기할 때도 많고 그렇다. 빗속 혈투는 '인정사정 볼 것 없다'가 유명하기도 하고 나도 너무 좋아한다. (류승완, 베테랑2 빗속 옥상 액션 연출 관련 인터뷰)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.sisaweek.com/news/articleView.html?idxno=218414",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0060",
+      "citingFilmId": "film_0034",
+      "citedFilmId": "film_0031",
+      "relationType": "reference",
+      "signal": "director_declared",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "김태용·민규동 감독이 개봉 직후 씨네21 인터뷰에서 전편과의 관계를 직접 언급: \"<여고괴담>은 두 가지 기억으로 남아 있는 듯하다. 하나는 교육 환경에 대한 날카로운 비판이고, 하나는 무서운 영화라는 점이다.\" \"반면 스타도 없고 특이한 얘깃거리가 없는 데도 관심을 끄는 것은 속편의 혜택이다.…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "http://www.cine21.com/news/view/?mag_id=33328",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0061",
+      "citingFilmId": "film_0083",
+      "citedFilmId": "film_0034",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "김혜리 평론가, '[김혜리의 영화의 일기] 애도자들'(씨네21, 2018-09-18): \"레즈비언적 관계뿐 아니라, 뒤이어 일어나는 소녀들의 가학적인 패닉 현상과 희생양 찾기까지 <여고괴담 두번째 이야기>로 거슬러가는 연상도 불가피하다.\" - 명시적 영향 선언이 아닌 계보적 연상 지적이므로 low.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "http://www.cine21.com/news/view/?idx=0&mag_id=91217",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0063",
+      "citingFilmId": "film_0077",
+      "citedFilmId": "film_0034",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "김혜리 평론가, '[김혜리의 영화의 일기] 정글과 법'(씨네21, 2016-07-06)에서 <우리들>을 논하며: \"민규동, 김태용 감독의 <여고괴담 두번째 이야기>와 윤성현 감독의 <파수꾼>이 그랬듯 윤가은 감독은 유년기, 청소년기를 이미 통과한 단계로 돌아보는 대신 고유한 생태계로서 관찰한다.\" - 접근법의 계보를 잇는다는 비평적 병치이며 명시적 영향 선언은 아니므로 low.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://cine21.com/news/view/?mag_id=84603",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0064",
+      "citingFilmId": "film_0036",
+      "citedFilmId": "film_0017",
+      "relationType": "influence",
+      "signal": "director_declared",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "박찬욱 감독: \"'최후의 증인' 원작 소설을 쓴 김성종 작가의 여러 소설에 오병호 형사가 자주 등장하는데, 오 형사는 한국 추리소설이 별로 없던 시절 장르 소설의 영웅이었다. 오 형사의 비극적 죽음이 깊은 인상을 줘서 '공동경비구역 JSA'의 마지막은 '최후의 증인'을 생각하며 구상했던 것 같다.\" (2019년 10월 27일 한국영상자료원 시네마테크KOFA '한국영화 100년' 상영회 강연.…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.segye.com/newsView/20191029504834",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0065",
+      "citingFilmId": "film_0036",
+      "citedFilmId": "film_0033",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "\"<쉬리>를 신호탄으로, 공동경비구역 JSA(박찬욱 감독 2000), 박하사탕(이창동 감독 2000), 실미도(강우석 감독 2003), 살인의 추억(봉준호 감독 2003), 태극기 휘날리며(강제규 감독, 2004) 등의 작품들이 뒤를 이어 제작되었고, 이른바 작품성과 상업성을 모두 갖춘 한국형 '웰메이드 영화(well-made Film)'의 시대가 열렸다.\" (오마이스타 이언정 기자) - 텍스트적 오마주가 아닌 한국형 블록버스터·분단 소재 노선의 산업적/장르적 계보 서술임.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://star.ohmynews.com/NWS_Web/OhmyStar/at_pg.aspx?CNTN_CD=A0003111208",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0066",
+      "citingFilmId": "film_0040",
+      "citedFilmId": "film_0036",
+      "relationType": "parody",
+      "signal": "critic",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "\"<재밌는 영화(2002)>가 패러디한 28편의 한국 영화는 다음과 같습니다: <동감>, <친구>, <엽기적인 그녀>, <간첩 리철진>, <주유소 습격사건>, <넘버3>, <인정사정 볼 것 없다>, <반칙왕>, <박하사탕>, <접속>, <비트>, <공동경비구역 JSA>, <거짓말>, <여고괴담>, <투캅스>, <비천무>, <초록물고기>, <서편제>, <게임의 법칙>, <신라의 달밤>, <선물>, <8월의 크리스마스>, <번지점프를 하다>, <다찌마와 리>, <나도 아내가 있었으면 좋겠다>,…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://m.kukinews.com/article/view/kuk202111180107",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0067",
+      "citingFilmId": "film_0057",
+      "citedFilmId": "film_0036",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "\"이들에 비하면 <의형제>(2010)와 <공조>(2017)는 완벽한 해피엔딩으로 기획된 영화다.\" ... \"혹시 그렇게 바래진 기억 덕분에 이후 <의형제>나 <공조> <베를린> 그리고 <강철비> 같은 남북한 남자들의 콤비플레이가 가능했던 걸까?\" (강병진, KMDB 한국영화걸작선 '공동경비구역 JSA' 평론. 같은 글에서 \"한국영화 속 남북의 우정이 서로를 믿지 못한 남북한 군인들의 공포에서 시작된 셈이다\"라며 JSA를 남북 버디 영화 계보의 기점으로 서술.)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/story/10/647",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0068",
+      "citingFilmId": "film_0079",
+      "citedFilmId": "film_0036",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "\"이들에 비하면 <의형제>(2010)와 <공조>(2017)는 완벽한 해피엔딩으로 기획된 영화다.\" ... \"혹시 그렇게 바래진 기억 덕분에 이후 <의형제>나 <공조> <베를린> 그리고 <강철비> 같은 남북한 남자들의 콤비플레이가 가능했던 걸까?\" (강병진, KMDB 한국영화걸작선 '공동경비구역 JSA' 평론)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/story/10/647",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0069",
+      "citingFilmId": "film_0067",
+      "citedFilmId": "film_0036",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "\"혹시 그렇게 바래진 기억 덕분에 이후 <의형제>나 <공조> <베를린> 그리고 <강철비> 같은 남북한 남자들의 콤비플레이가 가능했던 걸까?\" (강병진, KMDB 한국영화걸작선 '공동경비구역 JSA' 평론. 베를린은 열거 속 언급 수준이라 confidence=low)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/story/10/647",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0070",
+      "citingFilmId": "film_0078",
+      "citedFilmId": "film_0036",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "\"혹시 그렇게 바래진 기억 덕분에 이후 <의형제>나 <공조> <베를린> 그리고 <강철비> 같은 남북한 남자들의 콤비플레이가 가능했던 걸까?\" (강병진, KMDB 한국영화걸작선 '공동경비구역 JSA' 평론. 강철비는 열거 속 언급 수준이라 confidence=low. 나무위키 '강철비' 문서에도 \"평론가들은 강철비가 쉬리나 공동경비구역 JSA 이후 북한을 다룬 액션 영화들이 북한을 무조건 남한과 같은 편으로 본 것과 달리...\" 취지의 서술이 있으나 보조 근거로만 취급)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/story/10/647",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0071",
+      "citingFilmId": "film_0071",
+      "citedFilmId": "film_0039",
+      "relationType": "homage",
+      "signal": "director_declared",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "안국진 감독 씨네21 인터뷰: \"전주국제영화제 때도 그렇고 잔인하다는 평이 많아서 사실 좀 충격받았다. 내가 <복수는 나의 것>(2002)을 너무 많이 봤나? (웃음)\" - 또한 오프닝 대사 오마주에 대한 관객·리뷰 관찰: \"박찬욱 영화의 양아들이라 불리울 정도로 B스러운 몇몇 장면들과 그의 영화를 오마주한 대사들을 찾는 재미 또한 쏠쏠하다\"(브런치 리뷰, 수남의 \"미안해요. 그러니까 내가 죽이는 거 이해해 주세요\"를 <복수는 나의 것> 송강호의 \"너 착한 놈인 거 안다.…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://cine21.com/news/view/?mag_id=80913",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0072",
+      "citingFilmId": "film_0044",
+      "citedFilmId": "film_0039",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "씨네21 전문가 20자평에서 평론가 홍성남: \"어처구니없이 허무맹랑한 상상력으로 만든 `복수는 나의것`\" - 납치·감금·사적 복수 구조의 유사성을 겨냥한 비교 촌평. 명시적 영향/오마주 서술이 아닌 유사성 지적 수준이므로 low. 두 영화의 제작 시기가 근접해(2002-2003) 실제 영향 관계 성립 여부는 불확실.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://cine21.com/movie/info/?movie_id=5556",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0073",
+      "citingFilmId": "film_0054",
+      "citedFilmId": "film_0044",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "'잉여문화'를 적극 반영한 SF 영화 '불청객'은 \"지구를 지켜라 이후 가장 발칙한 데뷔작\"(김도훈 평론가), \"장기하가 에드우드를 만났을 때\"(이동진 평론가) 등의 찬사를 받으며 개봉 당시 많은 영화인, 네티즌들의 이목을 끌었고",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=41D5_7hkQQU",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0074",
+      "citingFilmId": "film_0059",
+      "citedFilmId": "film_0048",
+      "relationType": "influence",
+      "signal": "director_declared",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "김지훈 감독: \"봉준호 감독의 '괴물'이 없었다면 탄생하지 못했을 것\" (2011년 7월 26일 '7광구' 언론시사회, 이데일리 기사 제목: \"김지훈 감독, ''7광구', 봉준호 감독 '괴물' 덕분에 탄생'\"). 세계일보 동일 시사회 기사에도 \"봉준호 감독의 '괴물'이 존재했기 때문에 '7광구'에 대한 꿈을 피울 수 있었다고도 덧붙였다\"고 보도됨 (https://www.segye.com/newsView/20110726005139).",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.edaily.co.kr/News/Read?newsId=01364486596318456&mediaCodeNo=258",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0075",
+      "citingFilmId": "film_0082",
+      "citedFilmId": "film_0048",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "시사저널 기사(《괴물》 이후 12년, 한국 '괴수물'은 진화했습니까?): \"괴수물을 정치적으로 독해했다는 점에서 《물괴》는 '괴물을 이용한 사회풍자극'이었던 봉준호 감독의 《괴물》과 맞닿아 있는 부분이 분명 있다.\" 같은 기사에서 한국 괴수물이 \"2006년 봉준호 감독의 《괴물》을 통해 비약적인 발전을 보였지만 유통기간이 짧았다\"고 서술하며 물괴를 그 이후 계보에 놓음.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.sisajournal.com/news/articleView.html?idxno=177567",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0076",
+      "citingFilmId": "film_0074",
+      "citedFilmId": "film_0048",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "영화평론가 임정식(평론가시선 - 우리시대의영화⑭ 부산행): \"한국 영화사의 맥락에서 보면, 멀리는 1960년대 영화 '대괴수 용가리'(1967)와 '우주괴인 왕마귀'(1967), 가깝게는 봉준호 감독의 '괴물'(2006)과 유사한 점이 많다.\" 유사성 지적 수준의 계보 서술이며, 연상호 감독이 '괴물'의 영향을 직접 인정한 인터뷰는 검색으로 확인하지 못함.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://v.daum.net/v/20251214180143621",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0077",
+      "citingFilmId": "film_0051",
+      "citedFilmId": "film_0041",
+      "relationType": "influence",
+      "signal": "director_declared",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "나홍진: \"<살인의 추억>은 몇번을 봐도 걸작이다. TV에서 하면 아직도 좋아라 하고 또 본다. 다만 관객으로서는 엄청 많이 봤지만 영화를 찍으면서는 떠올린 적이 없다. (...) 다만 한 가지. 이 장르의 교과서 격인 <살인의 추억>을 예전에 엄청 봤으니 나도 모르는 내 무의식이 그 영화의 냄새와 향을 쫓으려고 했는지 모르겠다.…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://cine21.com/news/view/?mag_id=50336",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0078",
+      "citingFilmId": "film_0056",
+      "citedFilmId": "film_0051",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "<악마를 보았다>(2010)를 주제로 한 씨네21 에디토리얼: \"영화산업 내적으로 본다면 <추격자>의 성공이 만들어낸 '잔혹 스릴러 신드롬'이 여전히 작동 중이라고 설명할 수 있겠지만\" - 악마를 보았다를 추격자가 촉발한 잔혹 스릴러 흐름의 산물로 위치시키는 산업적 영향 서술.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://cine21.com/news/view/?mag_id=62028",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0079",
+      "citingFilmId": "film_0075",
+      "citedFilmId": "film_0052",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "\"<비밀은 없다>나 <마더>(봉준호, 2009)가 후자의 경우다. 두 영화는 자식을 잃거나 잃을 위험에 처한 엄마를 탐정으로 내세운 느와르 장르를 전유한다.\" ... \"이 쇼트는 <마더>에서 석양이 내리쬐는 갈대밭에서 정신을 놓은 듯 춤을 추는 엄마의 첫 쇼트와 상응한다.\" (조혜영 영화평론가, 한국영상자료원 KMDb 칼럼. 영향·오마주 단정이 아닌 계보적 비교 분석이므로 low)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.kmdb.or.kr/story/418/6967",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0080",
+      "citingFilmId": "film_0081",
+      "citedFilmId": "film_0052",
+      "relationType": "thematic",
+      "signal": "critic",
+      "confidence": "low",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "기사 제목 \"봉준호 <마더>엔 있고, 곽경택 <희생부활자>엔 없는 것\". 본문: \"모성애가 지닌 초월적인 힘을 알고 있었던 봉 감독은 의도적으로 그것을 배제했던 것이다. ... 곽경택 감독은 RV라는 소재가 지닌 이야기의 힘을 발전시키기보다 모성애로 주제의식을 널뛰어버렸다.\" (김종성, 오마이스타 2017-10-17. '마더'를 모성 스릴러의 기준점으로 삼은 대비 비평이며 영향 주장은 아니므로 low)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://star.ohmynews.com/NWS_Web/OhmyStar/at_pg.aspx?CNTN_CD=A0002368459",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0081",
+      "citingFilmId": "film_0073",
+      "citedFilmId": "film_0053",
+      "relationType": "parody",
+      "signal": "critic",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "\"석민우 감독은 영화 '좋은 놈, 나쁜 놈, 이상한 놈'과 '박쥐'을 패러디했으며 깐느 박이라는 인물을 통해 박찬욱 감독에 대한 애정을 드러내기도 했다.\" (아주경제 리뷰). 교차근거: 극중 영화 '악마의 씨' 장면은 \"'박쥐'에 참여했던 석민우 감독의 기억을 떠올려 만들어낸 신들\"이며 \"박찬욱 감독의 '박쥐'와 김지운 감독의 '좋은 놈, 나쁜 놈, 이상한 놈'의 촬영현장을 재연한 신들\"이라고 SBS 인터뷰 기사가 서술 (https://ent.sbs.co.kr/news/article.do?…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.ajunews.com/view/20160328133715760",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0082",
+      "citingFilmId": "film_0088",
+      "citedFilmId": "film_0072",
+      "relationType": "influence",
+      "signal": "director_declared",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "빈틈없는 세계관, 꽉 닫힌 결말은 한국형 오컬트 무비의 장을 연 또 다른 영화, 나홍진 감독의 '곡성'과 '사바하'가 비교되는 지점이다. 장재현 감독은 \"'곡성'의 영향을 받았다면 받았다 할 수 있을 것이지만 차이도 봤다\"고 조심스럽게 언급했다. 그는 \"'곡성'이 좋다\"며 \"리얼리티를 기반으로 한 초자연적인 이야기랄까. 고마운 작품이다. 그 작품이 있었기에 장르 폭이 넓어진 것 같다\"고 덧붙였다. (SPOTV NEWS, 2019.02.23, 김현록 기자 인터뷰)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=266919",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0083",
+      "citingFilmId": "film_0076",
+      "citedFilmId": "film_0001",
+      "relationType": "homage",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "\"When she enters Kouzuki's hybrid Japanese and English-style mansion, Sook-hee takes over the narrative. This act of repositioning pays homage to an earlier film, director Kim Ki-young's 1960 film The Housemaid, which frames the housemaid character as the 'other' invading the…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://reverseshot.org/reviews/entry/2271/handmaiden",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0084",
+      "citingFilmId": "film_0084",
+      "citedFilmId": "film_0074",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "《부산행》이 열어젖힌 한국형 좀비물의 생명 연장을 가늠하게 할 두 개의 프로젝트가 있다. (중략) 《창궐》이 먼저 대중 앞에 섰다. / 관절을 꺾으며 좀비로 변하는 장면은 《부산행》에서 이미 소개된 특징이라 그리 인상적이진 않고",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.sisajournal.com/news/articleView.html?idxno=178282",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0085",
+      "citingFilmId": "film_0086",
+      "citedFilmId": "film_0074",
+      "relationType": "reference",
+      "signal": "critic",
+      "confidence": "high",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "집안의 브레인 민걸(김남길)은 가족들에게 대놓고 '부산행'을 보여주며 좀비 존재를 알려준다. (중략) '부산행'과 인터넷 서핑을 통해서 좀비 노트도 완성했다. 아마 '부산행'이 없었다면 '기묘한 가족'의 이 설정 자체는 존재하지 않았을 것이다.",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://www.theviewers.co.kr/View.aspx?No=114877",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0086",
+      "citingFilmId": "film_0089",
+      "citedFilmId": "film_0074",
+      "relationType": "influence",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "당연히 이런 판도에 결정적 초석이 된 것은 2016년 개봉한 연상호 감독의 <부산행>의 성공이다. 여기에 넷플릭스가 제작한 좀비사극 <킹덤>을 향한 글로벌 팬덤의 가세는 순식간에 한국을 좀비물의 신흥강국으로 극상시켰다. (#살아있다 시네프리뷰 기사 중, '한국형 좀비영화의 또 다른 상업성'으로서 부산행이 연 판도 위에 위치시킴)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://weekly.khan.co.kr/article/202006191522431",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0087",
+      "citingFilmId": "film_0095",
+      "citedFilmId": "film_0074",
+      "relationType": "homage",
+      "signal": "critic",
+      "confidence": "medium",
+      "publicationStatus": "published",
+      "evidence": {
+        "publicExcerpt": "이 작품을 투자배급한 NEW가 한국형 좀비물의 선봉 격인 <부산행>을 선보였다는 사실을 기억하자. 영화에서도 이를 오마주한 장면들이 나온다. (기사 제목: ''부산행' 오마주, 침체된 극장가에 '좀비딸'이 온다') / 보조 근거(시사저널): 그 출발선에 연상호 감독의 《부산행》(2016)이 있다. (https://v.daum.net/v/20250810090124180)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://star.ohmynews.com/NWS_Web/OhmyStar/at_pg.aspx?CNTN_CD=A0003150690",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "edge_0016",
+      "citingFilmId": "film_0050",
+      "citedFilmId": "film_0042",
+      "relationType": "parody",
+      "signal": "public",
+      "confidence": "low",
+      "publicationStatus": "candidate",
+      "evidence": {
+        "publicExcerpt": "[나무위키 단독] 오대수가 풀려난 뒤 전화로 말하는 \"누구냐 너?\" 장면에 대해 나무위키 올드보이(2003)/명장면 문서는 패러디가 많다고 서술하며 \"'좋은 놈, 나쁜 놈, 이상한 놈'에서 송강호가 패러디하기도 했다\"고 기술 (윤태구(송강호)가 선글라스를 쓰고 박도원(정우성)을 보며 \"너, 누구냐?\"라고 하는 장면).",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://namu.wiki/w/%EC%98%AC%EB%93%9C%EB%B3%B4%EC%9D%B4(2003)/%EB%AA%85%EC%9E%A5%EB%A9%B4",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0020",
+      "citingFilmId": "film_0022",
+      "citedFilmId": "film_0009",
+      "relationType": "influence",
+      "signal": "public",
+      "confidence": "low",
+      "publicationStatus": "candidate",
+      "evidence": {
+        "publicExcerpt": "[나무위키 단독] 이장호는 하길종과 친한 사이였고 영상시대로 대표되는 하길종의 뉴웨이브 시네마 운동에 동참하기도 했다. 평론가들은 그 점에서 바보선언이 바보들의 행진의 맥을 이어 한국 뉴웨이브 시네마의 실험을 이어가는 작품이라 분석하기도 한다. (같은 문서는 두 작품이 제목만 비슷할 뿐 서사적으로는 '전혀 관련이 없다'고도 명시)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://namu.wiki/w/바보선언",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0025",
+      "citingFilmId": "film_0060",
+      "citedFilmId": "film_0030",
+      "relationType": "homage",
+      "signal": "public",
+      "confidence": "low",
+      "publicationStatus": "candidate",
+      "evidence": {
+        "publicExcerpt": "[나무위키 단독] \"애니메이션 《소중한 날의 꿈》에서는 주인공 이랑과 철수가 자전거를 타고 정원과 다림의 드라이빙 코스를 그대로 답습하듯 지나가는 장면이 있으며, 안재훈 감독은 자신이 이 영화의 팬이었기 때문에 오마주를 한 것이라고 밝혔다.\" (두 작품 모두 군산 로케이션. 소중한 날의 꿈은 한국 극장용 장편 애니메이션.)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://namu.wiki/w/8%EC%9B%94%EC%9D%98%20%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0056",
+      "citingFilmId": "film_0070",
+      "citedFilmId": "film_0035",
+      "relationType": "homage",
+      "signal": "public",
+      "confidence": "low",
+      "publicationStatus": "candidate",
+      "evidence": {
+        "publicExcerpt": "[나무위키 단독] 《인정사정 볼 것 없다》: 전체적인 구도가 비슷하게 전개되며, 더 나아가 류승완이 그 영화를 오마주하고 재해석했다고 볼 여지도 충분하다. 예를 들어 《인정사정 볼 것 없다》에선 선착장에서 범인이 달려서 도주하는 것을 형사가 같이 뛰면서 잡을 듯 닿을 듯 말 듯 하면서 도망치는 자와 잡으려는 자의 미묘한 상황과 긴장감을 표현했다면 《베테랑》에서는 선착장에서 도주하는 범인은 열심히 뛰고 형사는 차를 타고 유유히 따라가 빨리 차에 타라며 유머스럽게 연출했다.…",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://namu.wiki/w/%EB%B2%A0%ED%85%8C%EB%9E%91(%EC%98%81%ED%99%94)",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0057",
+      "citingFilmId": "film_0085",
+      "citedFilmId": "film_0035",
+      "relationType": "homage",
+      "signal": "public",
+      "confidence": "low",
+      "publicationStatus": "candidate",
+      "evidence": {
+        "publicExcerpt": "[나무위키 단독] 옛 영화들에 대한 패러디와 오마주가 정말 많아 알면 알수록 재미가 쏠쏠하다. 쉽게 찾을 수 있는 것들로는 범죄도시, 아저씨, 주유소 습격사건, 인정사정 볼 것 없다, 영웅본색 2 정도가 있다. (극한직업 문서)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://namu.wiki/w/%EA%B7%B9%ED%95%9C%EC%A7%81%EC%97%85(%EC%98%81%ED%99%94)",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0058",
+      "citingFilmId": "film_0043",
+      "citedFilmId": "film_0035",
+      "relationType": "influence",
+      "signal": "public",
+      "confidence": "low",
+      "publicationStatus": "candidate",
+      "evidence": {
+        "publicExcerpt": "[나무위키 단독] 이명세 감독 특유의 영상미가 빛을 발한 작품으로 이후 공공의 적 시리즈, 와일드카드, 범죄도시 시리즈 등으로 이어지는 한국영화의 단골소재인 Bad Ass 형사의 초석을 다진 작품이기도 하다. (인정사정 볼 것 없다 문서)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://namu.wiki/w/%EC%9D%B8%EC%A0%95%EC%82%AC%EC%A0%95%20%EB%B3%BC%20%EA%B2%83%20%EC%97%86%EB%8B%A4",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0059",
+      "citingFilmId": "film_0080",
+      "citedFilmId": "film_0035",
+      "relationType": "influence",
+      "signal": "public",
+      "confidence": "low",
+      "publicationStatus": "candidate",
+      "evidence": {
+        "publicExcerpt": "[나무위키 단독] 이명세 감독 특유의 영상미가 빛을 발한 작품으로 이후 공공의 적 시리즈, 와일드카드, 범죄도시 시리즈 등으로 이어지는 한국영화의 단골소재인 Bad Ass 형사의 초석을 다진 작품이기도 하다. (인정사정 볼 것 없다 문서)",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://namu.wiki/w/%EC%9D%B8%EC%A0%95%EC%82%AC%EC%A0%95%20%EB%B3%BC%20%EA%B2%83%20%EC%97%86%EB%8B%A4",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "edge_0062",
+      "citingFilmId": "film_0061",
+      "citedFilmId": "film_0034",
+      "relationType": "thematic",
+      "signal": "public",
+      "confidence": "low",
+      "publicationStatus": "candidate",
+      "evidence": {
+        "publicExcerpt": "[나무위키 단독] \"2011년에 개봉한 한국 영화 파수꾼이 이 영화와 자주 비견되곤 하는데, 이른바 여고괴담 두번째 이야기의 남고 버전으로 언급되는 영화이다. 파수꾼이 1만 관객을 돌파한 기념으로 김태용 감독과 파수꾼의 감독인 윤성현 감독이 대담을 진행하기도 했다.\"",
+        "summary": null
+      },
+      "sources": [
+        {
+          "url": "https://namu.wiki/w/%EC%97%AC%EA%B3%A0%EA%B4%B4%EB%8B%B4%20%EB%91%90%EB%B2%88%EC%A7%B8%20%EC%9D%B4%EC%95%BC%EA%B8%B0",
+          "publisher": null,
+          "title": null,
+          "publishedAt": null,
+          "accessedAt": "2026-07-09"
+        }
+      ]
+    }
+  ],
+  "candidateFilms": [
+    {
+      "id": "film_0022",
+      "titleKo": "바보선언",
+      "year": 1983,
+      "director": "이장호",
+      "aliases": [
+        "바보선언"
+      ],
+      "seed": true,
+      "kofa": {
+        "selected2024": true,
+        "exactRank": null
+      },
+      "publicStatus": "candidateOnly"
+    },
+    {
+      "id": "film_0043",
+      "titleKo": "와일드카드",
+      "year": 2003,
+      "director": "김유진",
+      "aliases": [
+        "와일드카드"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "candidateOnly"
+    },
+    {
+      "id": "film_0050",
+      "titleKo": "좋은 놈, 나쁜 놈, 이상한 놈",
+      "year": 2008,
+      "director": "김지운",
+      "aliases": [
+        "좋은 놈, 나쁜 놈, 이상한 놈"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "candidateOnly"
+    },
+    {
+      "id": "film_0060",
+      "titleKo": "소중한 날의 꿈",
+      "year": 2011,
+      "director": "안재훈, 한혜진",
+      "aliases": [
+        "소중한 날의 꿈"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "candidateOnly"
+    },
+    {
+      "id": "film_0061",
+      "titleKo": "파수꾼",
+      "year": 2011,
+      "director": "윤성현",
+      "aliases": [
+        "파수꾼"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "candidateOnly"
+    },
+    {
+      "id": "film_0070",
+      "titleKo": "베테랑",
+      "year": 2015,
+      "director": "류승완",
+      "aliases": [
+        "베테랑"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "candidateOnly"
+    },
+    {
+      "id": "film_0080",
+      "titleKo": "범죄도시",
+      "year": 2017,
+      "director": "강윤성",
+      "aliases": [
+        "범죄도시"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "candidateOnly"
+    },
+    {
+      "id": "film_0085",
+      "titleKo": "극한직업",
+      "year": 2019,
+      "director": "이병헌",
+      "aliases": [
+        "극한직업"
+      ],
+      "seed": false,
+      "kofa": {
+        "selected2024": false,
+        "exactRank": null
+      },
+      "publicStatus": "candidateOnly"
+    }
+  ],
+  "rankings": {
+    "byPageRank": [
+      "film_0002",
+      "film_0003",
+      "film_0007",
+      "film_0048",
+      "film_0001",
+      "film_0041",
+      "film_0015",
+      "film_0035",
+      "film_0074",
+      "film_0030",
+      "film_0033",
+      "film_0017",
+      "film_0027",
+      "film_0011",
+      "film_0039",
+      "film_0031",
+      "film_0008",
+      "film_0036",
+      "film_0042",
+      "film_0009",
+      "film_0034",
+      "film_0052",
+      "film_0028",
+      "film_0004",
+      "film_0053",
+      "film_0072",
+      "film_0029",
+      "film_0051",
+      "film_0044",
+      "film_0055",
+      "film_0006",
+      "film_0005",
+      "film_0032",
+      "film_0010",
+      "film_0012",
+      "film_0013",
+      "film_0014",
+      "film_0016",
+      "film_0018",
+      "film_0019",
+      "film_0020",
+      "film_0021",
+      "film_0023",
+      "film_0024",
+      "film_0025",
+      "film_0026",
+      "film_0037",
+      "film_0038",
+      "film_0040",
+      "film_0045",
+      "film_0046",
+      "film_0047",
+      "film_0049",
+      "film_0054",
+      "film_0056",
+      "film_0057",
+      "film_0058",
+      "film_0059",
+      "film_0062",
+      "film_0063",
+      "film_0064",
+      "film_0065",
+      "film_0066",
+      "film_0067",
+      "film_0068",
+      "film_0069",
+      "film_0071",
+      "film_0073",
+      "film_0075",
+      "film_0076",
+      "film_0077",
+      "film_0078",
+      "film_0079",
+      "film_0081",
+      "film_0082",
+      "film_0083",
+      "film_0084",
+      "film_0086",
+      "film_0087",
+      "film_0088",
+      "film_0089",
+      "film_0090",
+      "film_0091",
+      "film_0092",
+      "film_0093",
+      "film_0094",
+      "film_0095"
+    ],
+    "byInDegree": [
+      "film_0001",
+      "film_0033",
+      "film_0036",
+      "film_0041",
+      "film_0035",
+      "film_0074",
+      "film_0030",
+      "film_0007",
+      "film_0015",
+      "film_0027",
+      "film_0011",
+      "film_0048",
+      "film_0002",
+      "film_0042",
+      "film_0009",
+      "film_0017",
+      "film_0039",
+      "film_0034",
+      "film_0052",
+      "film_0003",
+      "film_0031",
+      "film_0004",
+      "film_0006",
+      "film_0053",
+      "film_0072",
+      "film_0032",
+      "film_0008",
+      "film_0029",
+      "film_0051",
+      "film_0005",
+      "film_0028",
+      "film_0044",
+      "film_0055",
+      "film_0010",
+      "film_0012",
+      "film_0013",
+      "film_0014",
+      "film_0016",
+      "film_0018",
+      "film_0019",
+      "film_0020",
+      "film_0021",
+      "film_0023",
+      "film_0024",
+      "film_0025",
+      "film_0026",
+      "film_0037",
+      "film_0038",
+      "film_0040",
+      "film_0045",
+      "film_0046",
+      "film_0047",
+      "film_0049",
+      "film_0054",
+      "film_0056",
+      "film_0057",
+      "film_0058",
+      "film_0059",
+      "film_0062",
+      "film_0063",
+      "film_0064",
+      "film_0065",
+      "film_0066",
+      "film_0067",
+      "film_0068",
+      "film_0069",
+      "film_0071",
+      "film_0073",
+      "film_0075",
+      "film_0076",
+      "film_0077",
+      "film_0078",
+      "film_0079",
+      "film_0081",
+      "film_0082",
+      "film_0083",
+      "film_0084",
+      "film_0086",
+      "film_0087",
+      "film_0088",
+      "film_0089",
+      "film_0090",
+      "film_0091",
+      "film_0092",
+      "film_0093",
+      "film_0094",
+      "film_0095"
+    ],
+    "byGold": [
+      "film_0001",
+      "film_0041",
+      "film_0027",
+      "film_0030",
+      "film_0035",
+      "film_0048",
+      "film_0042",
+      "film_0017",
+      "film_0003",
+      "film_0004",
+      "film_0006",
+      "film_0031",
+      "film_0039",
+      "film_0072"
+    ]
+  }
+}

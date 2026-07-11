@@ -1,0 +1,52 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath?: string;
+  noindex?: boolean;
+}
+
+const { title, description, canonicalPath = Astro.url.pathname, noindex = false } = Astro.props;
+const canonical = new URL(canonicalPath, Astro.site || Astro.url.origin);
+const fullTitle = title === '한국영화 영향력 지도' ? title : `${title} | 한국영화 영향력 지도`;
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#171510" />
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL('/og-default.svg', Astro.site || Astro.url.origin)} />
+    <title>{fullTitle}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+    <header class="site-header">
+      <a class="brand" href="/">한국영화 영향력 지도</a>
+      <nav aria-label="주요 메뉴">
+        <a href="/rankings/">순위</a>
+        <a href="/map/">계보 지도</a>
+        <a href="/films/">영화</a>
+        <a href="/methodology/">방법론</a>
+        <a href="/data/">데이터</a>
+      </nav>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer">
+      <p>KOFA 100선 가운데 허브 30편에서 출발한 파일럿 연구입니다.</p>
+      <div><a href="/about/">프로젝트 소개</a><a href="/methodology/">한계와 계산법</a><a href="/data/">데이터 v1</a></div>
+    </footer>
+  </body>
+</html>
