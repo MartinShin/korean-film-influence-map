@@ -15,6 +15,7 @@
     "generate:data": "node scripts/generate-site-data.ts",
     "prebuild": "node scripts/generate-site-data.ts",
     "build": "astro build",
+    "postbuild": "node scripts/postbuild-nest.ts",
     "verify:dist": "node scripts/verify-dist.ts",
     "preview": "astro preview"
   },
