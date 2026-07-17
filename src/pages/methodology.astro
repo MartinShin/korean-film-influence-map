@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { manifest } from '../lib/site.ts';
+
+const c = manifest.counts;
+---
+
+<BaseLayout
+  title="방법론"
+  description="한국영화 영향 그래프의 수집 방법(propose-then-verify), 신호·신뢰도 체계, 계산식, 공개 정책과 한계."
+  path="/methodology/"
+>
+  <h1>방법론</h1>
+
+  <h2>연구 질문</h2>
+  <p>
+    논문 세계에는 피인용 수와 PageRank류 지표로 만든 논문·저자 순위가 있다. 영화에도 같은 것을 만들 수
+    있을까? 특히 국제 연구(Spitz &amp; Horvát 2014, Bioglio &amp; Pensa 2018 등)가 사실상 배제해 온
+    <strong>한국영화 내부의 영향 계보</strong>를 인용 그래프로 세울 수 있을까?
+  </p>
+  <p>
+    논문과의 결정적 차이: 논문은 저자가 참고문헌으로 인용을 <em>선언</em>하지만, 영화의 영향은 제3자가
+    <em>추론</em>한다. 그래서 이 프로젝트는 “누가 그 영향을 주장했는가”(신호)를 모든 관계에 라벨링한다.
+  </p>
+
+  <h2>그래프 정의</h2>
+  <ul>
+    <li>노드 = 한국영화. 엣지 A → B = “후대 영화 A가 선대 영화 B를 참조/오마주/리메이크/영향받음”.</li>
+    <li>영향받은 횟수 = 노드로 들어오는 엣지 수(피인용 수).</li>
+    <li>한국영화 사이 관계만 수집한다. 외국영화·소설·만화·TV와의 관계는 이 그래프의 범위 밖.</li>
+    <li>같은 감독의 자기 작품 사이 관계는 넣지 않는다 (자기 인용 제외).</li>
+  </ul>
+
+  <h2>수집: propose-then-verify</h2>
+  <ol>
+    <li><strong>제안</strong> - 영화별로 “이 영화를 참조한 후대작 / 이 영화가 참조한 선대작” 후보를 생성한다.</li>
+    <li><strong>검증</strong> - 후보마다 언론 인터뷰·평론·학술 자료를 검색해 실제 서술을 확인하고 인용문과 URL을 수집한다. 검증에 실패한 후보는 버리지 않고 “미검증”으로 따로 기록하되 공개 그래프에 넣지 않는다.</li>
+    <li><strong>판정</strong> - 출처 유형에 따라 신호·신뢰도를 매긴다.</li>
+  </ol>
+  <p>
+    KOFA 한국영화 100선(2024) 전체 100편과, 조사 중 그래프에 새로 등장한 파생 영화들을 포함해 총
+    {c.seedFilmsProcessed}편을 이 절차로 조사했다 (연구 기준일 {manifest.researchDate}).
+  </p>
+
+  <h2>신호와 신뢰도</h2>
+  <ul>
+    <li><strong>감독 직접 언급(가중 3)</strong> - 감독·핵심 제작진 본인의 발언. 논문의 저자 인용에 해당. 현재 {c.publishedSignals.director_declared}건.</li>
+    <li><strong>평론가(가중 2)</strong> - 평론가·기자·연구자의 서술. 현재 {c.publishedSignals.critic}건.</li>
+    <li><strong>대중(가중 1)</strong> - 커뮤니티·위키의 관찰. 교차 검증 없이는 채택하지 않는다. 현재 {c.publishedSignals.public}건.</li>
+  </ul>
+  <p>
+    신뢰도는 높음(명시적 직접 발언·공식 리메이크, ×1) / 중간(명확한 비평 서술, ×2/3) / 낮음(계보 나열·연상
+    수준, ×1/3)으로 나눈다. 현재 분포: 높음 {c.publishedConfidence.high}, 중간 {c.publishedConfidence.medium},
+    낮음 {c.publishedConfidence.low}.
+  </p>
+
+  <h2>공개 정책</h2>
+  <ul>
+    <li>순위와 대표 화면에는 신뢰 출처가 확인된 공개 관계 {c.publishedEdges}건만 쓴다.</li>
+    <li>위키 단독 근거 관계 {c.candidateEdges}건은 “검토 후보”로 표시만 하고 순위에 반영하지 않는다.</li>
+    <li>모든 공개 관계는 근거 발췌문(300자 이내)과 원문 출처 링크를 함께 공개한다.</li>
+  </ul>
+
+  <h2>계산식</h2>
+  <ul>
+    <li><strong>피인용 수</strong> = 들어오는 공개 엣지 수.</li>
+    <li><strong>감독 직접 언급 수</strong> = 들어오는 공개 엣지 중 신호가 “감독 직접 언급”인 수.</li>
+    <li><strong>가중 영향 점수</strong> = Σ (신호 가중 × 신뢰도 배수).</li>
+    <li><strong>PageRank</strong> = 비가중, damping 0.85, dangling mass 균등 재분배, L1 오차 1e-12 수렴, 최대 1000회 반복.</li>
+    <li>동률은 가중 점수 → 피인용 → 안정 영화 ID 순으로 깬다.</li>
+  </ul>
+
+  <h2>알려진 한계</h2>
+  <ul>
+    <li><strong>수집 편향</strong> - 인터뷰·평론이 많이 남은 영화·시대가 유리하다. 관계가 없다는 기록은 “영향 없음”의 증거가 아니다.</li>
+    <li><strong>연식 효과</strong> - 최근 영화는 인용이 쌓일 시간이 없었다. 연식 보정은 아직 적용하지 않았고, 적용 시 방법론 버전을 올린다.</li>
+    <li><strong>프랜차이즈 혼입</strong> - 속편·공식 리메이크도 인용의 한 형태로 세고 있어, 시리즈가 긴 영화(여고괴담·자유부인·타짜)가 피인용에서 유리하다. 관계 유형별 분리 순위가 다음 과제다.</li>
+    <li><strong>소규모 PageRank 불안정</strong> - 엣지 수백 건 규모에서는 소수 연결에 랭크가 쏠린다. PageRank는 보조 지표로만 읽을 것.</li>
+    <li><strong>주관성</strong> - 영화의 영향은 제3자가 추론한다. 그래서 모든 관계에 “누가 주장했는가”와 원문 출처를 붙여, 판단 근거를 숨기지 않는 쪽을 택했다.</li>
+  </ul>
+
+  <h2>변경 이력</h2>
+  <ul>
+    <li><strong>{manifest.datasetVersion} ({manifest.researchDate})</strong> - KOFA 100선 전량 + 파생 후보 조사. 공개 관계 {c.publishedEdges}건, 영화 {c.publishedNodes}편.</li>
+    <li><strong>pilot-v1 (2026-07-09)</strong> - KOFA 100선 중 허브 30편 파일럿. 공개 관계 79건, 영화 87편.</li>
+  </ul>
+</BaseLayout>

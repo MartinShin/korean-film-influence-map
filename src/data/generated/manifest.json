@@ -1,0 +1,26 @@
+{
+ "datasetVersion": "v2",
+ "methodologyVersion": "1",
+ "researchDate": "2026-07-18",
+ "generatedAt": "2026-07-17T15:21:59.536Z",
+ "counts": {
+  "seedFilmsProcessed": 106,
+  "researchEdges": 169,
+  "publishedEdges": 154,
+  "candidateEdges": 15,
+  "researchNodes": 197,
+  "publishedNodes": 180,
+  "publishedSignals": {
+   "director_declared": 29,
+   "critic": 122,
+   "public": 3
+  },
+  "publishedConfidence": {
+   "high": 41,
+   "medium": 58,
+   "low": 55
+  },
+  "kofaFilmsInGraph": 71,
+  "kofaFilmsWithIncoming": 54
+ }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/", "destination": "/cinema/", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/cinema", "destination": "/" },
+    { "source": "/cinema/:path*", "destination": "/:path*" }
+  ]
+}

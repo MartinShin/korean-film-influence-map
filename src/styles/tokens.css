@@ -1,0 +1,26 @@
+/* 영사실 콘셉트 - 다크 단일 테마. 색만으로 신호를 구분하지 않고 기호·텍스트를 병행한다. */
+:root {
+  color-scheme: dark;
+
+  --page: #100f0d;
+  --surface: #1a1917;
+  --surface-2: #211f1c;
+  --ink: #f3f0e7;
+  --ink-2: #c4c1b6;
+  --muted: #97948a;
+  --border: rgba(243, 240, 231, 0.14);
+  --grid: #2b2a26;
+
+  --accent: #e5ad48;
+  --accent-deep: #c98500;
+  --signal-gold: #e5ad48;
+  --signal-critic: #6aa5ec;
+  --signal-public: #3fbe93;
+  --warn: #e66767;
+
+  --font-body: 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, -apple-system, sans-serif;
+  --font-display: Georgia, 'Batang', 'Times New Roman', serif;
+
+  --maxw: 62rem;
+  --radius: 10px;
+}

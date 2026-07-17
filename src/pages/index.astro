@@ -1,0 +1,145 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Notice from '../components/common/Notice.astro';
+import { url } from '../lib/url.ts';
+import { manifest, topFilms, rankOf, publishedFilms } from '../lib/site.ts';
+
+const c = manifest.counts;
+const goldTop = topFilms('gold', 1)[0];
+const inTop = topFilms('inDegree', 1)[0];
+const prTop = topFilms('pagerank', 1)[0];
+
+// 명성 vs 영향력 미리보기: KOFA 정확 순위 보유작(top10)의 피인용 순위
+const kofaTop = publishedFilms
+  .filter((f) => f.kofa.exactRank !== null)
+  .sort((a, b) => (a.kofa.exactRank ?? 99) - (b.kofa.exactRank ?? 99))
+  .slice(0, 6);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: '한국영화 내부 영향 인용 그래프',
+  description:
+    '한국영화 사이의 영향·오마주·리메이크 관계를 출처와 함께 수집한 인용 그래프 데이터셋. 감독 직접 언급, 피인용 수, PageRank 순위 포함.',
+  version: manifest.datasetVersion,
+  dateModified: manifest.researchDate,
+  license: 'https://github.com/MartinShin/korean-film-influence-map',
+  creator: { '@type': 'Person', name: 'Hocheol Shin' },
+  distribution: [
+    { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: new URL(url('/data/edges.json'), Astro.site).href },
+    { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: new URL(url('/data/edges.csv'), Astro.site).href },
+  ],
+};
+---
+
+<BaseLayout
+  title="한국영화 영향력 지도"
+  description="논문 인용 네트워크처럼 한국영화 사이의 영향·오마주·리메이크 관계를 모아, 감독 직접 언급·피인용·PageRank로 매긴 실험적 순위."
+  path="/"
+  jsonLd={jsonLd}
+>
+  <h1>어떤 한국영화가 뒤에 온 영화들을 만들었나</h1>
+  <p class="lede">
+    논문 세계가 인용 횟수로 논문의 영향력을 재듯, 이 사이트는 <strong>“영화 A가 영화 B에서 영향받았다”</strong>는
+    관계를 감독 인터뷰·평론·기사에서 하나하나 수집해 한국영화의 인용 그래프를 만들고, 그 그래프에서 순위를 계산합니다.
+    모든 관계는 근거 인용문과 출처 링크가 붙어 있어 엣지 단위로 반박할 수 있습니다.
+  </p>
+  <Notice />
+
+  <ul class="stat-grid">
+    <li><span class="num">{c.publishedEdges}</span><span class="label">공개 영향 관계</span></li>
+    <li><span class="num">{c.publishedNodes}</span><span class="label">그래프에 등장한 영화</span></li>
+    <li><span class="num">{c.kofaFilmsWithIncoming}<span style="font-size:1rem">/100</span></span><span class="label">피인용 확인된 KOFA 100선</span></li>
+    <li><span class="num">{c.publishedSignals.director_declared}</span><span class="label">감독 직접 언급 관계</span></li>
+  </ul>
+
+  <h2>세 가지 척도, 세 개의 1위</h2>
+  <p>
+    무엇을 “영향력”으로 재느냐에 따라 1위가 달라집니다. 이 간극 자체가 이 프로젝트의 관찰 대상입니다.
+  </p>
+  <ol class="rank-list">
+    <li>
+      <strong>감독 직접 언급</strong> - 후대 감독이 이름을 불러 준 횟수:
+      <a href={url(`/films/${goldTop.id}/`)}>{goldTop.titleKo} ({goldTop.year})</a> ({goldTop.metrics?.goldInDegree}회)
+    </li>
+    <li>
+      <strong>피인용 수</strong> - 방향 무관 전체 인용:
+      <a href={url(`/films/${inTop.id}/`)}>{inTop.titleKo} ({inTop.year})</a> ({inTop.metrics?.inDegree}회)
+    </li>
+    <li>
+      <strong>PageRank</strong> - 영향력 있는 영화에게 인용될수록 가산:
+      <a href={url(`/films/${prTop.id}/`)}>{prTop.titleKo} ({prTop.year})</a> ({prTop.metrics?.pagerank.toFixed(5)})
+    </li>
+  </ol>
+  <div class="btn-row">
+    <a class="btn" href={url('/rankings/')}>전체 순위 보기</a>
+    <a class="btn" href={url('/films/')}>영화별 관계 찾아보기</a>
+  </div>
+
+  <h2>명성과 영향력은 다르게 움직인다</h2>
+  <p>
+    KOFA 한국영화 100선(2024, 선정위원 240인)은 “명성”의 순위입니다. 인용 그래프의 “영향력” 순위와 겹치는 곳도,
+    크게 갈라지는 곳도 있습니다.
+  </p>
+  <div class="table-wrap">
+    <table>
+      <caption>KOFA 상위 10선 중 6편의 그래프 성적 (전체 비교는 순위 페이지)</caption>
+      <thead>
+        <tr>
+          <th scope="col">영화</th>
+          <th class="num" scope="col">KOFA 순위</th>
+          <th class="num" scope="col">피인용</th>
+          <th class="num" scope="col">피인용 순위</th>
+        </tr>
+      </thead>
+      <tbody>
+        {kofaTop.map((f) => (
+          <tr>
+            <td><a href={url(`/films/${f.id}/`)}>{f.titleKo} ({f.year})</a></td>
+            <td class="num">{f.kofa.exactRank}위</td>
+            <td class="num">{f.metrics?.inDegree ?? 0}</td>
+            <td class="num">{rankOf('inDegree', f.id) ?? '-'}위</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>이번 판의 네 가지 이야기</h2>
+  <div class="story-grid">
+    <div class="story-card">
+      <h3>명성 없는 1위, 여고괴담</h3>
+      <p>
+        피인용·PageRank 1위 <a href={url(`/films/${inTop.id}/`)}>여고괴담(1998)</a>은 정작 KOFA 100선에 없다
+        (속편 「여고괴담 두번째 이야기」만 선정). 장르의 원형은 명성보다 영향력에서 먼저 드러난다.
+      </p>
+    </div>
+    <div class="story-card">
+      <h3>유실 필름의 부활, 만추</h3>
+      <p>
+        필름이 남아 있지 않은 이만희의 만추(1966)는 공식 리메이크 세 편과 후대 감독의 존경 선언으로
+        PageRank 3위에 올랐다. 볼 수 없는 영화가 그래프에서는 살아 있다.
+      </p>
+    </div>
+    <div class="story-card">
+      <h3>기생충의 시간이 흐르기 시작했다</h3>
+      <p>
+        신작은 인용이 쌓일 시간이 없어 그래프에서 불리하다. KOFA 3위 기생충(2019)의 피인용은 이제 1건 -
+        후속 세대의 인용이 축적되기 시작하는 순간을 관찰 중이다.
+      </p>
+    </div>
+    <div class="story-card">
+      <h3>출처를 가려 받는 그래프</h3>
+      <p>
+        위키 단독 근거 관계 {c.candidateEdges}건은 “검토 후보”로 분리해 순위에서 제외했다.
+        모든 공개 관계는 언론·평론·학술 출처와 인용문을 요구한다.
+      </p>
+    </div>
+  </div>
+
+  <h2>더 보기</h2>
+  <p>
+    계산 방식과 한계는 <a href={url('/methodology/')}>방법론</a>에, 전체 데이터는
+    <a href={url('/data/')}>데이터 페이지</a>에서 JSON·CSV로 내려받을 수 있습니다.
+  </p>
+</BaseLayout>

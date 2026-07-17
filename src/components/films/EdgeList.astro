@@ -1,0 +1,53 @@
+---
+import { url } from '../../lib/url.ts';
+import { filmById, type SiteEdge } from '../../lib/site.ts';
+import { SIGNAL_LABEL, SIGNAL_MARK, CONFIDENCE_LABEL, RELATION_LABEL } from '../../lib/labels.ts';
+
+interface Props {
+  edges: SiteEdge[];
+  /** 'incoming'이면 인용측(citing)을, 'outgoing'이면 피인용측(cited)을 표제로 보여준다 */
+  direction: 'incoming' | 'outgoing';
+  emptyText: string;
+}
+
+const { edges, direction, emptyText } = Astro.props;
+const partner = (e: SiteEdge) => filmById.get(direction === 'incoming' ? e.citingFilmId : e.citedFilmId);
+const hostAvailable = (id: string) => filmById.get(id)?.publicStatus === 'published';
+---
+
+{edges.length === 0 ? (
+  <p class="meta-line">{emptyText}</p>
+) : (
+  <ul class="edge-list">
+    {edges.map((e) => {
+      const p = partner(e);
+      if (!p) return null;
+      return (
+        <li class="edge-item">
+          <div class="head">
+            {hostAvailable(p.id) ? (
+              <a href={url(`/films/${p.id}/`)}><strong>{p.titleKo} ({p.year})</strong></a>
+            ) : (
+              <strong>{p.titleKo} ({p.year})</strong>
+            )}
+            {p.director && <span class="rel">감독 {p.director}</span>}
+            <span class="rel">{RELATION_LABEL[e.relationType] ?? e.relationType}</span>
+            <span class={`sig sig-${e.signal}`}>{SIGNAL_MARK[e.signal]} {SIGNAL_LABEL[e.signal]}</span>
+            <span class="conf">{CONFIDENCE_LABEL[e.confidence]}</span>
+            {e.publicationStatus === 'candidate' && <span class="badge-candidate">검토 후보 · 순위 미반영</span>}
+          </div>
+          {e.evidence.publicExcerpt && <blockquote>{e.evidence.publicExcerpt}</blockquote>}
+          <p class="src">
+            출처:{' '}
+            {e.sources.map((s, i) => (
+              <>
+                {i > 0 && ' · '}
+                <a href={s.url} rel="noopener noreferrer" target="_blank">{new URL(s.url).hostname.replace(/^www\./, '')}</a>
+              </>
+            ))}
+          </p>
+        </li>
+      );
+    })}
+  </ul>
+)}

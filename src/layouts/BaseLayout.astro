@@ -1,0 +1,81 @@
+---
+import '../styles/tokens.css';
+import '../styles/global.css';
+import { url } from '../lib/url.ts';
+import { manifest } from '../lib/site.ts';
+
+interface Props {
+  title: string;
+  description: string;
+  /** 정규 URL 경로 (base 제외, 예: '/rankings/') */
+  path: string;
+  jsonLd?: object | null;
+}
+
+const { title, description, path, jsonLd = null } = Astro.props;
+const canonical = new URL(url(path), Astro.site).href;
+const fullTitle =
+  path === '/' ? '한국영화 영향력 지도 - 인용 네트워크로 본 한국영화 순위' : `${title} | 한국영화 영향력 지도`;
+
+const nav = [
+  { href: '/', label: '홈' },
+  { href: '/rankings/', label: '순위' },
+  { href: '/films/', label: '영화' },
+  { href: '/methodology/', label: '방법론' },
+  { href: '/data/', label: '데이터' },
+  { href: '/about/', label: '소개' },
+];
+const current = (href: string) =>
+  href === '/' ? path === '/' : path.startsWith(href);
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(url('/og-default.png'), Astro.site).href} />
+    <meta property="og:locale" content="ko_KR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="dataset-version" content={manifest.datasetVersion} />
+    {jsonLd && <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문 바로가기</a>
+    <header class="site-header">
+      <div class="inner">
+        <a class="site-title" href={url('/')}><span class="beam">◈</span> 한국영화 영향력 지도</a>
+        <nav class="site-nav" aria-label="주 메뉴">
+          {nav.map((item) => (
+            <a href={url(item.href)} aria-current={current(item.href) ? 'page' : undefined}>{item.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="inner">
+        <p>
+          한국영화 영향력 지도 - 인용 네트워크로 본 한국영화 순위 실험.
+          데이터 {manifest.datasetVersion} (연구 기준일 {manifest.researchDate}) ·
+          <a href={url('/data/')}>데이터 내려받기</a> ·
+          <a href="https://github.com/MartinShin/korean-film-influence-map" rel="noopener noreferrer" target="_blank">GitHub</a>
+        </p>
+        <p>
+          본 사이트는 개인 연구 파일럿이며 한국영상자료원(KOFA)의 공식 순위가 아닙니다.
+          엣지가 없다는 사실은 영향이 없다는 증거가 아닙니다.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

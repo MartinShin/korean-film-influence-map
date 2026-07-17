@@ -1,0 +1,36 @@
+{
+  "name": "korean-film-influence-map",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "check": "astro check",
+    "test": "vitest run",
+    "export:data": "node scripts/export-public-data.ts",
+    "validate:data": "node scripts/validate-data.ts",
+    "generate:data": "node scripts/generate-site-data.ts",
+    "prebuild": "node scripts/generate-site-data.ts",
+    "build": "astro build",
+    "verify:dist": "node scripts/verify-dist.ts",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.0",
+    "@types/node": "^26.1.1",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "allowScripts": {
+    "esbuild@0.27.7": true,
+    "esbuild@0.25.12": true,
+    "sharp@0.34.5": true
+  }
+}

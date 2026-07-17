@@ -1,0 +1,2578 @@
+{
+ "meta": {
+  "datasetVersion": "v2"
+ },
+ "films": [
+  {
+   "id": "film_0001",
+   "titleKo": "마음의 고향",
+   "year": 1949,
+   "director": "윤용규",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0002",
+   "titleKo": "춘향전",
+   "year": 1955,
+   "director": "이규환",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0003",
+   "titleKo": "자유부인",
+   "year": 1956,
+   "director": "한형모",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0004",
+   "titleKo": "속편 자유부인",
+   "year": 1957,
+   "director": "김화랑",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0005",
+   "titleKo": "하녀",
+   "year": 1960,
+   "director": "김기영",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": 1
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0006",
+   "titleKo": "사랑방 손님과 어머니",
+   "year": 1961,
+   "director": "신상옥",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0007",
+   "titleKo": "오발탄",
+   "year": 1961,
+   "director": "유현목",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": 4
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0008",
+   "titleKo": "돌아오지 않는 해병",
+   "year": 1963,
+   "director": "이만희",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0009",
+   "titleKo": "만추",
+   "year": 1966,
+   "director": "이만희",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0010",
+   "titleKo": "안개",
+   "year": 1967,
+   "director": "김수용",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0011",
+   "titleKo": "월하의 공동묘지",
+   "year": 1967,
+   "director": "권철휘",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0012",
+   "titleKo": "휴일",
+   "year": 1968,
+   "director": "이만희",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0013",
+   "titleKo": "자유부인",
+   "year": 1969,
+   "director": "강대진",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0014",
+   "titleKo": "화녀",
+   "year": 1970,
+   "director": "김기영",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0015",
+   "titleKo": "충녀",
+   "year": 1972,
+   "director": "김기영",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0016",
+   "titleKo": "별들의 고향",
+   "year": 1974,
+   "director": "이장호",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0017",
+   "titleKo": "아내들의 행진",
+   "year": 1974,
+   "director": "임권택",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0018",
+   "titleKo": "바보들의 행진",
+   "year": 1975,
+   "director": "하길종",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": 6
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0019",
+   "titleKo": "삼포가는 길",
+   "year": 1975,
+   "director": "이만희",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0020",
+   "titleKo": "영자의 전성시대",
+   "year": 1975,
+   "director": "김호선",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0021",
+   "titleKo": "육체의 약속",
+   "year": 1975,
+   "director": "김기영",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0022",
+   "titleKo": "미스 염의 순정시절",
+   "year": 1976,
+   "director": "김선경",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0023",
+   "titleKo": "겨울여자",
+   "year": 1977,
+   "director": "김호선",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0024",
+   "titleKo": "이어도",
+   "year": 1977,
+   "director": "김기영",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0025",
+   "titleKo": "사랑방 손님과 어머니",
+   "year": 1978,
+   "director": "조문진",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0026",
+   "titleKo": "속 별들의 고향",
+   "year": 1978,
+   "director": "하길종",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0027",
+   "titleKo": "바람 불어 좋은 날",
+   "year": 1980,
+   "director": "이장호",
+   "aliases": [
+    "바람불어 좋은날",
+    "바람 불어 좋은날"
+   ],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0028",
+   "titleKo": "속 병태와 영자",
+   "year": 1980,
+   "director": "이강윤",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0029",
+   "titleKo": "최후의 증인",
+   "year": 1980,
+   "director": "이두용",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0030",
+   "titleKo": "피막",
+   "year": 1980,
+   "director": "이두용",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0031",
+   "titleKo": "난장이가 쏘아올린 작은 공",
+   "year": 1981,
+   "director": "이원세",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0032",
+   "titleKo": "만다라",
+   "year": 1981,
+   "director": "임권택",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0033",
+   "titleKo": "만추",
+   "year": 1981,
+   "director": "김수용",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0034",
+   "titleKo": "별들의 고향 3",
+   "year": 1981,
+   "director": "이경태",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0035",
+   "titleKo": "자유부인 '81",
+   "year": 1981,
+   "director": "박호태",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0036",
+   "titleKo": "꼬방동네 사람들",
+   "year": 1982,
+   "director": "배창호",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0037",
+   "titleKo": "속 영자의 전성시대",
+   "year": 1982,
+   "director": "심재석",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0038",
+   "titleKo": "바보선언",
+   "year": 1983,
+   "director": "이장호",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0039",
+   "titleKo": "여인잔혹사 물레야 물레야",
+   "year": 1983,
+   "director": "이두용",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0040",
+   "titleKo": "고래사냥",
+   "year": 1984,
+   "director": "배창호",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0041",
+   "titleKo": "깊고 푸른 밤",
+   "year": 1985,
+   "director": "배창호",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0042",
+   "titleKo": "서울예수",
+   "year": 1986,
+   "director": "장선우, 선우완",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0043",
+   "titleKo": "씨받이",
+   "year": 1986,
+   "director": "임권택",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0044",
+   "titleKo": "여곡성",
+   "year": 1986,
+   "director": "이혁수",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0045",
+   "titleKo": "자유부인 2",
+   "year": 1986,
+   "director": "박호태",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0046",
+   "titleKo": "87 영자의 전성시대",
+   "year": 1987,
+   "director": "유진선",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0047",
+   "titleKo": "기쁜 우리 젊은 날",
+   "year": 1987,
+   "director": "배창호",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0048",
+   "titleKo": "안녕하세요 하나님",
+   "year": 1987,
+   "director": "배창호",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0049",
+   "titleKo": "상계동 올림픽",
+   "year": 1988,
+   "director": "김동원",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0050",
+   "titleKo": "아메리카 아메리카",
+   "year": 1988,
+   "director": "장길수",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0051",
+   "titleKo": "칠수와 만수",
+   "year": 1988,
+   "director": "박광수",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0052",
+   "titleKo": "달마가 동쪽으로 간 까닭은?",
+   "year": 1989,
+   "director": "배용균",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0053",
+   "titleKo": "1990 자유부인",
+   "year": 1990,
+   "director": "박재호",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0054",
+   "titleKo": "그들도 우리처럼",
+   "year": 1990,
+   "director": "박광수",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0055",
+   "titleKo": "나의 사랑 나의 신부",
+   "year": 1990,
+   "director": "이명세",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0056",
+   "titleKo": "우묵배미의 사랑",
+   "year": 1990,
+   "director": "장선우",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0057",
+   "titleKo": "장군의 아들",
+   "year": 1990,
+   "director": "임권택",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0058",
+   "titleKo": "파업전야",
+   "year": 1990,
+   "director": "장동홍·이은·이재구·장윤현",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0059",
+   "titleKo": "서편제",
+   "year": 1993,
+   "director": "임권택",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0060",
+   "titleKo": "화엄경",
+   "year": 1993,
+   "director": "장선우",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0061",
+   "titleKo": "게임의 법칙",
+   "year": 1994,
+   "director": "장현수",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0062",
+   "titleKo": "낮은 목소리",
+   "year": 1995,
+   "director": "변영주",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0063",
+   "titleKo": "깡패수업",
+   "year": 1996,
+   "director": "김상진",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0064",
+   "titleKo": "꽃잎",
+   "year": 1996,
+   "director": "장선우",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0065",
+   "titleKo": "돼지가 우물에 빠진 날",
+   "year": 1996,
+   "director": "홍상수",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": 10
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0066",
+   "titleKo": "깊은 슬픔",
+   "year": 1997,
+   "director": "곽지균",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0067",
+   "titleKo": "넘버 3",
+   "year": 1997,
+   "director": "송능한",
+   "aliases": [
+    "넘버3"
+   ],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0068",
+   "titleKo": "접속",
+   "year": 1997,
+   "director": "장윤현",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0069",
+   "titleKo": "초록 물고기",
+   "year": 1997,
+   "director": "이창동",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0070",
+   "titleKo": "편지",
+   "year": 1997,
+   "director": "이정국",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0071",
+   "titleKo": "8월의 크리스마스",
+   "year": 1998,
+   "director": "허진호",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": 8
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0072",
+   "titleKo": "남자의 향기",
+   "year": 1998,
+   "director": "장현수",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0073",
+   "titleKo": "약속",
+   "year": 1998,
+   "director": "김유진",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0074",
+   "titleKo": "여고괴담",
+   "year": 1998,
+   "director": "박기형",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0075",
+   "titleKo": "박하사탕",
+   "year": 1999,
+   "director": "이창동",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0076",
+   "titleKo": "쉬리",
+   "year": 1999,
+   "director": "강제규",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0077",
+   "titleKo": "여고괴담 두번째 이야기",
+   "year": 1999,
+   "director": "김태용, 민규동",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0078",
+   "titleKo": "인정사정 볼 것 없다",
+   "year": 1999,
+   "director": "이명세",
+   "aliases": [
+    "인정사정 볼것 없다"
+   ],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0079",
+   "titleKo": "주유소 습격사건",
+   "year": 1999,
+   "director": "김상진",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0080",
+   "titleKo": "가위",
+   "year": 2000,
+   "director": "안병기",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0081",
+   "titleKo": "공동경비구역 JSA",
+   "year": 2000,
+   "director": "박찬욱",
+   "aliases": [
+    "공동경비구역 J.S.A",
+    "JSA"
+   ],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0082",
+   "titleKo": "죽거나 혹은 나쁘거나",
+   "year": 2000,
+   "director": "류승완",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0083",
+   "titleKo": "춘향뎐",
+   "year": 2000,
+   "director": "임권택",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0084",
+   "titleKo": "플란다스의 개",
+   "year": 2000,
+   "director": "봉준호",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0085",
+   "titleKo": "달마야 놀자",
+   "year": 2001,
+   "director": "박철관",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0086",
+   "titleKo": "두사부일체",
+   "year": 2001,
+   "director": "윤제균",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0087",
+   "titleKo": "소름",
+   "year": 2001,
+   "director": "윤종찬",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0088",
+   "titleKo": "신라의 달밤",
+   "year": 2001,
+   "director": "김상진",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0089",
+   "titleKo": "조폭 마누라",
+   "year": 2001,
+   "director": "조진규",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0090",
+   "titleKo": "공공의 적",
+   "year": 2002,
+   "director": "강우석",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0091",
+   "titleKo": "복수는 나의 것",
+   "year": 2002,
+   "director": "박찬욱",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0092",
+   "titleKo": "재밌는 영화",
+   "year": 2002,
+   "director": "장규성",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0093",
+   "titleKo": "폰",
+   "year": 2002,
+   "director": "안병기",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0094",
+   "titleKo": "동승",
+   "year": 2003,
+   "director": "주경중",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0095",
+   "titleKo": "살인의 추억",
+   "year": 2003,
+   "director": "봉준호",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": 2
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0096",
+   "titleKo": "싱글즈",
+   "year": 2003,
+   "director": "권칠인",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0097",
+   "titleKo": "여고괴담 세번째 이야기: 여우계단",
+   "year": 2003,
+   "director": "윤재연",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0098",
+   "titleKo": "올드보이",
+   "year": 2003,
+   "director": "박찬욱",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": 5
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0099",
+   "titleKo": "와일드카드",
+   "year": 2003,
+   "director": "김유진",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0100",
+   "titleKo": "장화, 홍련",
+   "year": 2003,
+   "director": "김지운",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0101",
+   "titleKo": "지구를 지켜라!",
+   "year": 2003,
+   "director": "장준환",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0102",
+   "titleKo": "인어공주",
+   "year": 2004,
+   "director": "박흥식",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0103",
+   "titleKo": "그때 그사람들",
+   "year": 2005,
+   "director": "임상수",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0104",
+   "titleKo": "끝나지 않은 세월",
+   "year": 2005,
+   "director": "김경률",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0105",
+   "titleKo": "사랑해, 말순씨",
+   "year": 2005,
+   "director": "박흥식",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0106",
+   "titleKo": "야수와 미녀",
+   "year": 2005,
+   "director": "이계벽",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0107",
+   "titleKo": "여고괴담 4: 목소리",
+   "year": 2005,
+   "director": "최익환",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0108",
+   "titleKo": "왕의 남자",
+   "year": 2005,
+   "director": "이준익",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0109",
+   "titleKo": "주먹이 운다",
+   "year": 2005,
+   "director": "류승완",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0110",
+   "titleKo": "친절한 금자씨",
+   "year": 2005,
+   "director": "박찬욱",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0111",
+   "titleKo": "가족의 탄생",
+   "year": 2006,
+   "director": "김태용",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0112",
+   "titleKo": "괴물",
+   "year": 2006,
+   "director": "봉준호",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0113",
+   "titleKo": "애정결핍이 두 남자에게 미치는 영향",
+   "year": 2006,
+   "director": "김성훈",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0114",
+   "titleKo": "타짜",
+   "year": 2006,
+   "director": "최동훈",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0115",
+   "titleKo": "파산의 기술記述",
+   "year": 2006,
+   "director": "이강현",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0116",
+   "titleKo": "밀양",
+   "year": 2007,
+   "director": "이창동",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0117",
+   "titleKo": "좋은 놈, 나쁜 놈, 이상한 놈",
+   "year": 2008,
+   "director": "김지운",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0118",
+   "titleKo": "추격자",
+   "year": 2008,
+   "director": "나홍진",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0119",
+   "titleKo": "마더",
+   "year": 2009,
+   "director": "봉준호",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0120",
+   "titleKo": "박쥐",
+   "year": 2009,
+   "director": "박찬욱",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0121",
+   "titleKo": "여고괴담 5: 동반자살",
+   "year": 2009,
+   "director": "이종용",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0122",
+   "titleKo": "김복남 살인사건의 전말",
+   "year": 2010,
+   "director": "장철수",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0123",
+   "titleKo": "만추",
+   "year": 2010,
+   "director": "김태용",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0124",
+   "titleKo": "불청객",
+   "year": 2010,
+   "director": "이응일",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0125",
+   "titleKo": "시",
+   "year": 2010,
+   "director": "이창동",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": 7
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0126",
+   "titleKo": "악마를 보았다",
+   "year": 2010,
+   "director": "김지운",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0127",
+   "titleKo": "의형제",
+   "year": 2010,
+   "director": "장훈",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0128",
+   "titleKo": "이층의 악당",
+   "year": 2010,
+   "director": "손재곤",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0129",
+   "titleKo": "하녀",
+   "year": 2010,
+   "director": "임상수",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0130",
+   "titleKo": "7광구",
+   "year": 2011,
+   "director": "김지훈",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0131",
+   "titleKo": "고지전",
+   "year": 2011,
+   "director": "장훈",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0132",
+   "titleKo": "블라인드",
+   "year": 2011,
+   "director": "안상훈",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0133",
+   "titleKo": "소중한 날의 꿈",
+   "year": 2011,
+   "director": "안재훈, 한혜진",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0134",
+   "titleKo": "파수꾼",
+   "year": 2011,
+   "director": "윤성현",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0135",
+   "titleKo": "건축학개론",
+   "year": 2012,
+   "director": "이용주",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0136",
+   "titleKo": "광해, 왕이 된 남자",
+   "year": 2012,
+   "director": "추창민",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0137",
+   "titleKo": "내가 살인범이다",
+   "year": 2012,
+   "director": "정병길",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0138",
+   "titleKo": "돈의 맛",
+   "year": 2012,
+   "director": "임상수",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0139",
+   "titleKo": "두 개의 문",
+   "year": 2012,
+   "director": "김일란, 홍지유",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0140",
+   "titleKo": "두레소리",
+   "year": 2012,
+   "director": "조정래",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0141",
+   "titleKo": "지슬: 끝나지 않은 세월 2",
+   "year": 2012,
+   "director": "오멸",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0142",
+   "titleKo": "관상",
+   "year": 2013,
+   "director": "한재림",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0143",
+   "titleKo": "그리고 싶은 것",
+   "year": 2013,
+   "director": "권효",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0144",
+   "titleKo": "몽타주",
+   "year": 2013,
+   "director": "정근섭",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0145",
+   "titleKo": "베를린",
+   "year": 2013,
+   "director": "류승완",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0146",
+   "titleKo": "한공주",
+   "year": 2013,
+   "director": "이수진",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0147",
+   "titleKo": "나의 사랑 나의 신부",
+   "year": 2014,
+   "director": "임찬상",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0148",
+   "titleKo": "도희야",
+   "year": 2014,
+   "director": "정주리",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0149",
+   "titleKo": "소리굽쇠",
+   "year": 2014,
+   "director": "추상록",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0150",
+   "titleKo": "신의 한 수",
+   "year": 2014,
+   "director": "조범구",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0151",
+   "titleKo": "카트",
+   "year": 2014,
+   "director": "부지영",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0152",
+   "titleKo": "타짜: 신의 손",
+   "year": 2014,
+   "director": "강형철",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0153",
+   "titleKo": "경성학교: 사라진 소녀들",
+   "year": 2015,
+   "director": "이해영",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0154",
+   "titleKo": "도리화가",
+   "year": 2015,
+   "director": "이종필",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0155",
+   "titleKo": "베테랑",
+   "year": 2015,
+   "director": "류승완",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0156",
+   "titleKo": "성실한 나라의 앨리스",
+   "year": 2015,
+   "director": "안국진",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0157",
+   "titleKo": "곡성",
+   "year": 2016,
+   "director": "나홍진",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0158",
+   "titleKo": "귀향",
+   "year": 2016,
+   "director": "조정래",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0159",
+   "titleKo": "내 마음의 고향",
+   "year": 2016,
+   "director": "박영철",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0160",
+   "titleKo": "대배우",
+   "year": 2016,
+   "director": "석민우",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0161",
+   "titleKo": "부산행",
+   "year": 2016,
+   "director": "연상호",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0162",
+   "titleKo": "비밀은 없다",
+   "year": 2016,
+   "director": "이경미",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0163",
+   "titleKo": "아가씨",
+   "year": 2016,
+   "director": "박찬욱",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0164",
+   "titleKo": "우리들",
+   "year": 2016,
+   "director": "윤가은",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0165",
+   "titleKo": "최악의 하루",
+   "year": 2016,
+   "director": "김종관",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0166",
+   "titleKo": "강철비",
+   "year": 2017,
+   "director": "양우석",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0167",
+   "titleKo": "공조",
+   "year": 2017,
+   "director": "김성훈",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0168",
+   "titleKo": "범죄도시",
+   "year": 2017,
+   "director": "강윤성",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0169",
+   "titleKo": "아이 캔 스피크",
+   "year": 2017,
+   "director": "김현석",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0170",
+   "titleKo": "희생부활자",
+   "year": 2017,
+   "director": "곽경택",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0171",
+   "titleKo": "물괴",
+   "year": 2018,
+   "director": "허종호",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0172",
+   "titleKo": "미쓰백",
+   "year": 2018,
+   "director": "이지원",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0173",
+   "titleKo": "벌새",
+   "year": 2018,
+   "director": "김보라",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0174",
+   "titleKo": "죄 많은 소녀",
+   "year": 2018,
+   "director": "김의석",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0175",
+   "titleKo": "창궐",
+   "year": 2018,
+   "director": "김성훈",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0176",
+   "titleKo": "허스토리",
+   "year": 2018,
+   "director": "민규동",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0177",
+   "titleKo": "극한직업",
+   "year": 2019,
+   "director": "이병헌",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0178",
+   "titleKo": "기묘한 가족",
+   "year": 2019,
+   "director": "이민재",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0179",
+   "titleKo": "기생충",
+   "year": 2019,
+   "director": "봉준호",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": 3
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0180",
+   "titleKo": "사바하",
+   "year": 2019,
+   "director": "장재현",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0181",
+   "titleKo": "생일",
+   "year": 2019,
+   "director": "이종언",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0182",
+   "titleKo": "타짜: 원 아이드 잭",
+   "year": 2019,
+   "director": "권오광",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0183",
+   "titleKo": "#살아있다",
+   "year": 2020,
+   "director": "조일형",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0184",
+   "titleKo": "남매의 여름밤",
+   "year": 2020,
+   "director": "윤단비",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0185",
+   "titleKo": "남산의 부장들",
+   "year": 2020,
+   "director": "우민호",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0186",
+   "titleKo": "소리꾼",
+   "year": 2020,
+   "director": "조정래",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0187",
+   "titleKo": "여고괴담 여섯번째 이야기: 모교",
+   "year": 2021,
+   "director": "이미영",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0188",
+   "titleKo": "헤어질 결심",
+   "year": 2022,
+   "director": "박찬욱",
+   "aliases": [],
+   "seed": true,
+   "kofa": {
+    "selected2024": true,
+    "exactRank": 8
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0189",
+   "titleKo": "거미집",
+   "year": 2023,
+   "director": "김지운",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0190",
+   "titleKo": "괴인",
+   "year": 2023,
+   "director": "이정홍",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0191",
+   "titleKo": "밀수",
+   "year": 2023,
+   "director": "류승완",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0192",
+   "titleKo": "콘크리트 유토피아",
+   "year": 2023,
+   "director": "엄태화",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0193",
+   "titleKo": "베테랑2",
+   "year": 2024,
+   "director": "류승완",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0194",
+   "titleKo": "파묘",
+   "year": 2024,
+   "director": "장재현",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0195",
+   "titleKo": "화녀",
+   "year": 2024,
+   "director": "유영선",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "candidateOnly"
+  },
+  {
+   "id": "film_0196",
+   "titleKo": "좀비딸",
+   "year": 2025,
+   "director": "필감성",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  },
+  {
+   "id": "film_0197",
+   "titleKo": "한란",
+   "year": 2025,
+   "director": "하명미",
+   "aliases": [],
+   "seed": false,
+   "kofa": {
+    "selected2024": false,
+    "exactRank": null
+   },
+   "publicStatus": "published"
+  }
+ ]
+}

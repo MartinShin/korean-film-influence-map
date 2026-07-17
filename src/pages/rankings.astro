@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Notice from '../components/common/Notice.astro';
+import RankingTable from '../components/rankings/RankingTable.astro';
+import { manifest } from '../lib/site.ts';
+
+const c = manifest.counts;
+---
+
+<BaseLayout
+  title="순위"
+  description="한국영화 영향력 순위 - 감독 직접 언급, 피인용 수, PageRank, 가중 영향 점수 네 가지 척도."
+  path="/rankings/"
+>
+  <h1>영향력 순위</h1>
+  <p class="lede">
+    네 가지 척도를 나란히 놓습니다. 공개 관계 {c.publishedEdges}건(영화 {c.publishedNodes}편)만 사용하고,
+    위키 단독 근거 후보 {c.candidateEdges}건은 계산에서 제외합니다.
+  </p>
+  <Notice />
+
+  <h2 id="gold">1. 감독 직접 언급 순위</h2>
+  <p>
+    후대 감독·핵심 제작진이 인터뷰 등에서 영향을 직접 인정한 관계만 센다. 논문의 저자 인용에 가장
+    가까운, 가장 보수적이고 신뢰할 수 있는 척도. 약점: 인터뷰가 많은 감독·시대에 유리하다.
+  </p>
+  <RankingTable kind="gold" count={15} caption="감독 직접 언급 수 상위 15편" />
+
+  <h2 id="indegree">2. 피인용 수 순위</h2>
+  <p>
+    신호를 가리지 않고 이 영화를 인용·계승·리메이크한 후대 영화 수를 센다. 커버리지가 가장 넓다.
+    약점: 속편·리메이크가 많은 프랜차이즈형 영화(여고괴담, 자유부인, 타짜)가 유리하다.
+  </p>
+  <RankingTable kind="inDegree" count={20} caption="피인용 수 상위 20편" />
+
+  <h2 id="pagerank">3. PageRank 순위</h2>
+  <p>
+    “영향력 있는 영화에게 인용될수록 더 영향력 있다”는 재귀적 명성 척도(damping 0.85, 비가중).
+    약점: 지금 규모(엣지 {c.publishedEdges}건)에서는 소수 연결에 랭크가 쏠리는 불안정이 남아 있어,
+    피인용 1건짜리 영화가 상위에 튀어오를 수 있다. 참고용 보조 지표로 읽을 것.
+  </p>
+  <RankingTable kind="pagerank" count={20} caption="PageRank 상위 20편" />
+
+  <h2 id="weighted">4. 가중 영향 점수 순위</h2>
+  <p>
+    신호 가중치(감독 언급 3, 평론가 2, 대중 1)에 신뢰도 배수(높음 1, 중간 2/3, 낮음 1/3)를 곱해 합산한
+    보조 지표. 감독의 명시적 인정과 스치는 계보 나열을 구분하기 위한 장치다.
+  </p>
+  <RankingTable kind="weighted" count={15} caption="가중 영향 점수 상위 15편" />
+
+  <h2>이 숫자를 읽는 법</h2>
+  <ul>
+    <li>순위는 “예술적 우열”이 아니라 <strong>문서로 확인된 인용 관계의 축적</strong>이다.</li>
+    <li>관계가 기록되지 않은 영화가 영향이 없다는 뜻이 아니다 - 수집 편향이 실재한다.</li>
+    <li>최근 영화일수록 인용이 쌓일 시간이 없었다(연식 효과, 보정 미적용).</li>
+    <li>각 영화 페이지에서 순위를 만든 관계 하나하나의 근거와 출처를 확인할 수 있다.</li>
+  </ul>
+</BaseLayout>

@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { url } from '../../lib/url.ts';
+import { publishedFilms, manifest } from '../../lib/site.ts';
+
+const films = [...publishedFilms].sort(
+  (a, b) => a.year - b.year || a.titleKo.localeCompare(b.titleKo, 'ko')
+);
+---
+
+<BaseLayout
+  title="영화 목록"
+  description={`영향 그래프에 등장한 한국영화 ${films.length}편 - 연도, 감독, 피인용·감독 언급·PageRank 지표.`}
+  path="/films/"
+>
+  <h1>영화 목록</h1>
+  <p class="lede">
+    공개 그래프에 등장한 {films.length}편. 제목을 누르면 그 영화가 주고받은 영향 관계와 근거를 볼 수 있습니다.
+  </p>
+  <p>
+    <label for="film-filter" class="meta-line">제목·감독으로 거르기 (JavaScript 없이도 전체 목록은 아래에 있습니다)</label>
+    <input id="film-filter" class="filter-input" type="search" placeholder="예: 하녀, 봉준호" autocomplete="off" />
+    <span id="film-count" class="meta-line" aria-live="polite"></span>
+  </p>
+
+  <div class="table-wrap">
+    <table id="film-table">
+      <caption>연도순 전체 목록 ({manifest.datasetVersion})</caption>
+      <thead>
+        <tr>
+          <th scope="col">영화</th>
+          <th scope="col">감독</th>
+          <th class="num" scope="col">피인용</th>
+          <th class="num" scope="col">감독 언급</th>
+          <th class="num" scope="col">인용함</th>
+          <th scope="col">KOFA</th>
+        </tr>
+      </thead>
+      <tbody>
+        {films.map((f) => (
+          <tr data-search={`${f.titleKo} ${f.aliases.join(' ')} ${f.director ?? ''} ${f.year}`}>
+            <td><a href={url(`/films/${f.id}/`)}>{f.titleKo} ({f.year})</a></td>
+            <td>{f.director ?? '-'}</td>
+            <td class="num">{f.metrics?.inDegree ?? 0}</td>
+            <td class="num">{f.metrics?.goldInDegree ?? 0}</td>
+            <td class="num">{f.metrics?.outDegree ?? 0}</td>
+            <td>
+              {f.kofa.exactRank !== null
+                ? `100선 ${f.kofa.exactRank}위`
+                : f.kofa.selected2024
+                  ? '100선'
+                  : ''}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const input = document.getElementById('film-filter') as HTMLInputElement | null;
+    const counter = document.getElementById('film-count');
+    const rows = Array.from(document.querySelectorAll<HTMLTableRowElement>('#film-table tbody tr'));
+    input?.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      let shown = 0;
+      for (const row of rows) {
+        const hit = !q || (row.dataset.search ?? '').toLowerCase().includes(q);
+        row.hidden = !hit;
+        if (hit) shown++;
+      }
+      if (counter) counter.textContent = q ? `${shown}편 일치` : '';
+    });
+  </script>
+</BaseLayout>

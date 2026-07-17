@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { manifest } from '../lib/site.ts';
+---
+
+<BaseLayout
+  title="소개"
+  description="한국영화 영향력 지도를 만든 이유, 파일럿 범위, 제작자, 피드백 방법."
+  path="/about/"
+>
+  <h1>소개</h1>
+
+  <h2>왜 만들었나</h2>
+  <p>
+    학술 세계는 인용 그래프 덕분에 “어떤 논문이 뒤의 연구를 만들었는가”를 수치로 말할 수 있다.
+    영화에는 그런 그래프가 없다 - 특히 한국영화의 내부 계보(하녀에서 기생충으로, 여고괴담에서 장화홍련으로)는
+    국제 영화 인용 연구에서도 사실상 공백이다. 이 사이트는 그 공백에 놓는 첫 실험이다:
+    감독 인터뷰·평론·기사에서 영향 서술을 하나하나 수집하고, 출처를 붙여 공개하고, 그 위에서 순위를 계산한다.
+  </p>
+
+  <h2>범위와 상태</h2>
+  <ul>
+    <li>데이터셋 {manifest.datasetVersion} (연구 기준일 {manifest.researchDate}) - KOFA 한국영화 100선(2024) 전체와 조사 중 파생된 영화들을 포함해 {manifest.counts.seedFilmsProcessed}편을 조사.</li>
+    <li>개인 연구 파일럿이다. KOFA·영화진흥위원회 등 어떤 기관의 공식 결과도 아니다.</li>
+    <li>관계가 기록되지 않았다는 것은 영향이 없다는 증거가 아니다.</li>
+  </ul>
+
+  <h2>제작자</h2>
+  <p>
+    신호철 (Hocheol Shin). 사회과학 연구자로, 순위·투표·집계 방법론에 관심이 있다.
+    다른 실험들은 <a href="https://www.shinhocheol.com" rel="noopener noreferrer">shinhocheol.com</a>에 있다.
+  </p>
+
+  <h2>피드백</h2>
+  <p>
+    관계 정정·추가 제안은
+    <a href="https://github.com/MartinShin/korean-film-influence-map/issues" rel="noopener noreferrer" target="_blank">GitHub 이슈</a>로
+    받는다. 좋은 제보의 형식: 인용측 영화, 피인용측 영화, 근거 문장, 원문 링크.
+  </p>
+</BaseLayout>
