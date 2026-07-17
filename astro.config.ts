@@ -6,7 +6,7 @@ export default defineConfig({
   site: 'https://www.shinhocheol.com',
   base: '/cinema',
   output: 'static',
-  trailingSlash: 'always',
+  trailingSlash: 'ignore',
   build: {
     format: 'directory',
   },
