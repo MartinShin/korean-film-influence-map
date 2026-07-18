@@ -30,6 +30,9 @@ export type SiteFilm = {
     longGap15: number;
     outDegree: number;
   } | null;
+  composite: number | null;
+  longGap15All: number;
+  corpusDocsAll: number;
 };
 
 export type SiteEdge = {
@@ -57,6 +60,7 @@ export const rankings = rankingsJson as {
   gold: RankRef[];
   weighted: RankRef[];
   corpusInDegree: RankRef[];
+  composite: RankRef[];
 };
 
 export type CorpusStatRow = {

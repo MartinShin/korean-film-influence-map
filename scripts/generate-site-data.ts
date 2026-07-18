@@ -119,12 +119,70 @@ const corpusRankSource = films
   .map((f) => ({ f, c: corpusMetric.get(f.id)! }))
   .sort((a, b) => b.c.inDegree - a.c.inDegree || b.c.inDocs - a.c.inDocs || (a.f.id < b.f.id ? -1 : 1));
 
+// ---------- 복합 점수 (방법론 v2, 베타) ----------
+// 4성분 균등 가중(0.25): 검증 가중점수, 검증 PageRank, 코퍼스 지지 기사량(log), long-gap(15년+) 쌍 수.
+// long-gap은 검증층 중복 쌍 포함 전체 화살표 기준(corpus-stats)을 제목+연도로 조인.
+type KrStat = { title: string; year: number | null; pairs: number; docs: number; gold: number; lg15: number };
+const krAllByKey = new Map<string, KrStat>();
+for (const s of (corpusStats.krCitedAll ?? []) as KrStat[]) {
+  krAllByKey.set(normalizeTitleKey(s.title) + '|' + (s.year ?? ''), s);
+}
+function krAllOf(f: Film): KrStat | null {
+  for (const dy of [0, 1, -1]) {
+    const v = krAllByKey.get(normalizeTitleKey(f.titleKo) + '|' + (f.year + dy));
+    if (v !== undefined) return v;
+  }
+  return null;
+}
+function lgAllOf(f: Film): number {
+  return krAllOf(f)?.lg15 ?? corpusMetric.get(f.id)?.longGap15 ?? 0;
+}
+function docsAllOf(f: Film): number {
+  const all = krAllOf(f)?.docs ?? 0;
+  return Math.max(all, corpusMetric.get(f.id)?.inDocs ?? 0);
+}
+
+const compFilms = films.filter((f) => publishedFilmIds.has(f.id));
+const comp = compFilms.map((f) => {
+  const m = metrics.get(f.id);
+  return {
+    id: f.id,
+    a: m?.weightedInDegree ?? 0,
+    b: m?.pagerank ?? 0,
+    cc: Math.log1p(docsAllOf(f)), // 코퍼스 지지 기사량 (검증층 중복 쌍의 기사 포함)
+    d: lgAllOf(f),
+  };
+});
+function percentile(values: number[]): Map<number, number> {
+  const sorted = [...values].sort((x, y) => x - y);
+  const map = new Map<number, number>();
+  for (const v of new Set(values)) {
+    let lo = 0;
+    while (lo < sorted.length && sorted[lo] < v) lo++;
+    map.set(v, sorted.length > 1 ? lo / (sorted.length - 1) : 0);
+  }
+  return map;
+}
+const pa = percentile(comp.map((x) => x.a));
+const pb = percentile(comp.map((x) => x.b));
+const pc = percentile(comp.map((x) => x.cc));
+const pd = percentile(comp.map((x) => x.d));
+const compositeScore = new Map<string, number>();
+for (const x of comp) {
+  const score = 0.25 * (pa.get(x.a) ?? 0) + 0.25 * (pb.get(x.b) ?? 0) + 0.25 * (pc.get(x.cc) ?? 0) + 0.25 * (pd.get(x.d) ?? 0);
+  compositeScore.set(x.id, Math.round(score * 1000) / 1000);
+}
+const compositeRank = comp
+  .filter((x) => (compositeScore.get(x.id) ?? 0) > 0)
+  .sort((x, y) => (compositeScore.get(y.id) ?? 0) - (compositeScore.get(x.id) ?? 0) || (x.id < y.id ? -1 : 1));
+
 const rankings = {
   pagerank: [...rankedList].sort(byPagerank).map((f, i) => ({ rank: i + 1, id: f.id })),
   inDegree: [...rankedList].sort(byInDegree).map((f, i) => ({ rank: i + 1, id: f.id })),
   gold: [...rankedList].sort(byGold).map((f, i) => ({ rank: i + 1, id: f.id })),
   weighted: [...rankedList].sort(byWeighted).map((f, i) => ({ rank: i + 1, id: f.id })),
   corpusInDegree: corpusRankSource.map((x, i) => ({ rank: i + 1, id: x.f.id })),
+  composite: compositeRank.map((x, i) => ({ rank: i + 1, id: x.id })),
 };
 
 const siteFilms = films.map((f) => {
@@ -143,6 +201,9 @@ const siteFilms = films.map((f) => {
         }
       : null,
     corpus: c ?? null,
+    composite: compositeScore.get(f.id) ?? null,
+    longGap15All: publishedFilmIds.has(f.id) ? lgAllOf(f) : 0,
+    corpusDocsAll: publishedFilmIds.has(f.id) ? docsAllOf(f) : 0,
   };
 });
 

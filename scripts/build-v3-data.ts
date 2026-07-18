@@ -274,7 +274,7 @@ function buildStats(filterCited: (a: Arrow) => boolean): Stat[] {
 }
 
 const foreignCited = buildStats((a) => a.cited_country === 'foreign').slice(0, 25);
-const krCitedAll = buildStats((a) => a.cited_country === 'kr');
+const krCitedAll = buildStats((a) => a.cited_country === 'kr'); // 전체 화살표 기준 (검증층 중복 포함)
 const krLongGap = krCitedAll.filter((s) => s.lg15 > 0).sort((a, b) => b.lg15 - a.lg15 || b.pairs - a.pairs).slice(0, 15);
 
 const corpusStats = {
@@ -291,6 +291,7 @@ const corpusStats = {
   },
   foreignCitedTop: foreignCited,
   krLongGapTop: krLongGap,
+  krCitedAll,
 };
 
 // ---------- 저장 ----------

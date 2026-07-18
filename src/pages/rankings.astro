@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Notice from '../components/common/Notice.astro';
 import RankingTable from '../components/rankings/RankingTable.astro';
-import { manifest } from '../lib/site.ts';
+import { manifest, topFilms } from '../lib/site.ts';
 import { url } from '../lib/url.ts';
 
 const c = manifest.counts;
@@ -49,6 +49,43 @@ const c = manifest.counts;
     보조 지표. 감독의 명시적 인정과 스치는 계보 나열을 구분하기 위한 장치다.
   </p>
   <RankingTable kind="weighted" count={15} caption="가중 영향 점수 상위 15편" />
+
+  <h2 id="composite">5. 복합 점수 (베타, 방법론 v2)</h2>
+  <p>
+    검증 가중점수·검증 PageRank·코퍼스 지지 기사량(log)·15년+ 인용쌍 수를 각각 백분위로 정규화해
+    균등 가중(0.25×4)으로 합산한 종합 지표. 균등 가중은 선행연구(Bioglio &amp; Pensa 2018)의 방식을 따랐다.
+    한 척도의 왕관이 아니라 네 척도의 합의를 보여 준다.
+  </p>
+  <div class="table-wrap">
+    <table>
+      <caption>복합 점수 상위 15편</caption>
+      <thead>
+        <tr>
+          <th class="num" scope="col">#</th>
+          <th scope="col">영화</th>
+          <th class="num" scope="col">종합</th>
+          <th class="num" scope="col">검증 가중</th>
+          <th class="num" scope="col">코퍼스 기사</th>
+          <th class="num" scope="col">15년+ 쌍</th>
+        </tr>
+      </thead>
+      <tbody>
+        {topFilms('composite', 15).map((f) => (
+          <tr>
+            <td class="num">{f.rank}</td>
+            <td>
+              <a href={url(`/films/${f.id}/`)}>{f.titleKo} ({f.year})</a>
+              {f.kofa.exactRank !== null && <span class="badge-kofa">KOFA {f.kofa.exactRank}위</span>}
+            </td>
+            <td class="num">{(f.composite ?? 0).toFixed(3)}</td>
+            <td class="num">{(f.metrics?.weightedInDegree ?? 0).toFixed(2)}</td>
+            <td class="num">{f.corpusDocsAll}</td>
+            <td class="num">{f.longGap15All}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
 
   <h2>이 숫자를 읽는 법</h2>
   <ul>
