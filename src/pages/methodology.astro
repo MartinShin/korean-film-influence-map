@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { manifest } from '../lib/site.ts';
+import { url } from '../lib/url.ts';
 
 const c = manifest.counts;
 ---
@@ -79,9 +80,27 @@ const c = manifest.counts;
     <li><strong>주관성</strong> - 영화의 영향은 제3자가 추론한다. 그래서 모든 관계에 “누가 주장했는가”와 원문 출처를 붙여, 판단 근거를 숨기지 않는 쪽을 택했다.</li>
   </ul>
 
+  <h2>두 개의 층: 검증층과 코퍼스층</h2>
+  <ul>
+    <li>
+      <strong>검증층 (tier=verified, {c.verifiedEdges}건)</strong> - 관계 하나하나를 개별 검색·검증해 수집.
+      공식 4지표는 이 층에서만 계산한다 (방법론 v1 고정).
+    </li>
+    <li>
+      <strong>코퍼스층 (tier=corpus, {c.corpusEdges}건)</strong> - 씨네21 아카이브 전수 스캔(기사 약 9만 7천 건)에서
+      "방향 있는 영향 주장 문장"만 기계 추출 + 판정을 거쳐 확보. 표본 프레임이 명시된 측정값("씨네21 전수 기준
+      N회")이라는 장점이 있고, 근거 문장·기사 링크·기사 날짜가 붙는다. 자세한 방법과 순위는
+      <a href={url('/corpus/')}>코퍼스 페이지</a> 참조.
+    </li>
+    <li>
+      두 층이 같은 관계를 발견하면 검증층을 우선한다. 층 구분은 데이터 다운로드의 <code>tier</code> 필드에 그대로 노출된다.
+    </li>
+  </ul>
+
   <h2>변경 이력</h2>
   <ul>
-    <li><strong>{manifest.datasetVersion} ({manifest.researchDate})</strong> - KOFA 100선 전량 + 파생 후보 조사. 공개 관계 {c.publishedEdges}건, 영화 {c.publishedNodes}편.</li>
+    <li><strong>v3 (2026-07-18)</strong> - 씨네21 전수 코퍼스층 추가 (한국영화 간 화살표 {c.corpusEdges}건 편입, 영화 {c.publishedNodes}편). 공식 지표는 검증층 유지.</li>
+    <li><strong>v2 (2026-07-18)</strong> - KOFA 100선 전량 + 파생 후보 조사. 검증 관계 154건, 영화 180편.</li>
     <li><strong>pilot-v1 (2026-07-09)</strong> - KOFA 100선 중 허브 30편 파일럿. 공개 관계 79건, 영화 87편.</li>
   </ul>
 </BaseLayout>

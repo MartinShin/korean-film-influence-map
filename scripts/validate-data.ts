@@ -7,6 +7,6 @@ import { join } from 'node:path';
 import { FilmsFileSchema, DatasetFileSchema } from '../src/data/schema.ts';
 
 const root = join(import.meta.dirname, '..');
-const films = FilmsFileSchema.parse(JSON.parse(readFileSync(join(root, 'data', 'public', 'films.v2.json'), 'utf8')));
-const dataset = DatasetFileSchema.parse(JSON.parse(readFileSync(join(root, 'data', 'public', 'dataset.v2.json'), 'utf8')));
+const films = FilmsFileSchema.parse(JSON.parse(readFileSync(join(root, 'data', 'public', 'films.v3.json'), 'utf8')));
+const dataset = DatasetFileSchema.parse(JSON.parse(readFileSync(join(root, 'data', 'public', 'dataset.v3.json'), 'utf8')));
 console.log(`schema OK: films=${films.films.length}, edges=${dataset.edges.length}`);

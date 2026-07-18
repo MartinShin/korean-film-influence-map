@@ -1,15 +1,17 @@
 {
- "datasetVersion": "v2",
+ "datasetVersion": "v3",
  "methodologyVersion": "1",
  "researchDate": "2026-07-18",
- "generatedAt": "2026-07-17T15:21:59.536Z",
+ "generatedAt": "2026-07-18T01:47:22.319Z",
  "counts": {
   "seedFilmsProcessed": 106,
-  "researchEdges": 169,
-  "publishedEdges": 154,
+  "researchEdges": 366,
+  "publishedEdges": 351,
   "candidateEdges": 15,
-  "researchNodes": 197,
-  "publishedNodes": 180,
+  "researchNodes": 395,
+  "publishedNodes": 378,
+  "verifiedEdges": 154,
+  "corpusEdges": 197,
   "publishedSignals": {
    "director_declared": 29,
    "critic": 122,

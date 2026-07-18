@@ -36,6 +36,8 @@ export const SourceSchema = z.object({
   accessedAt: z.string().nullable(),
 });
 
+export const Tier = z.enum(['verified', 'corpus']);
+
 export const EdgeSchema = z.object({
   id: z.string().regex(/^edge_\d{4}$/),
   citingFilmId: z.string().regex(/^film_\d{4}$/),
@@ -44,6 +46,9 @@ export const EdgeSchema = z.object({
   signal: Signal,
   confidence: Confidence,
   publicationStatus: PublicationStatus,
+  tier: Tier.default('verified'),
+  supportCount: z.number().int().min(1).optional(),
+  maxGapYears: z.number().int().nullable().optional(),
   evidence: z.object({
     publicExcerpt: z.string().max(300),
     summary: z.string().nullable(),
@@ -70,6 +75,8 @@ export const DatasetFileSchema = z.object({
       candidateEdges: z.number().int(),
       researchNodes: z.number().int(),
       publishedNodes: z.number().int(),
+      verifiedEdges: z.number().int().optional(),
+      corpusEdges: z.number().int().optional(),
     }),
   }),
   edges: z.array(EdgeSchema),

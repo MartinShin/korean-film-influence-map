@@ -30,9 +30,9 @@ const films = [...publishedFilms].sort(
         <tr>
           <th scope="col">영화</th>
           <th scope="col">감독</th>
-          <th class="num" scope="col">피인용</th>
+          <th class="num" scope="col">피인용(검증)</th>
+          <th class="num" scope="col">피인용(코퍼스)</th>
           <th class="num" scope="col">감독 언급</th>
-          <th class="num" scope="col">인용함</th>
           <th scope="col">KOFA</th>
         </tr>
       </thead>
@@ -42,8 +42,8 @@ const films = [...publishedFilms].sort(
             <td><a href={url(`/films/${f.id}/`)}>{f.titleKo} ({f.year})</a></td>
             <td>{f.director ?? '-'}</td>
             <td class="num">{f.metrics?.inDegree ?? 0}</td>
+            <td class="num">{f.corpus?.inDegree ?? 0}</td>
             <td class="num">{f.metrics?.goldInDegree ?? 0}</td>
-            <td class="num">{f.metrics?.outDegree ?? 0}</td>
             <td>
               {f.kofa.exactRank !== null
                 ? `100선 ${f.kofa.exactRank}위`

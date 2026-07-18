@@ -1,0 +1,337 @@
+{
+ "generatedFrom": "씨네21 아카이브 전수 (mag_id 100~111000, 1999~2026)",
+ "researchDate": "2026-07-18",
+ "totals": {
+  "articlesScanned": 97000,
+  "candidateSentences": 6523,
+  "judgedArrows": 3037,
+  "uniquePairs": 2446,
+  "directorDeclared": 239,
+  "krkrArrows": 302,
+  "publishedCorpusEdges": 197
+ },
+ "foreignCitedTop": [
+  {
+   "title": "매트릭스",
+   "year": 1999,
+   "pairs": 20,
+   "docs": 31,
+   "gold": 2,
+   "lg15": 3
+  },
+  {
+   "title": "현기증",
+   "year": 1958,
+   "pairs": 17,
+   "docs": 22,
+   "gold": 4,
+   "lg15": 17
+  },
+  {
+   "title": "블레이드 러너",
+   "year": 1982,
+   "pairs": 17,
+   "docs": 17,
+   "gold": 1,
+   "lg15": 17
+  },
+  {
+   "title": "스타워즈",
+   "year": 1977,
+   "pairs": 13,
+   "docs": 17,
+   "gold": 1,
+   "lg15": 10
+  },
+  {
+   "title": "에이리언",
+   "year": 1979,
+   "pairs": 13,
+   "docs": 13,
+   "gold": 3,
+   "lg15": 13
+  },
+  {
+   "title": "엑소시스트",
+   "year": 1973,
+   "pairs": 12,
+   "docs": 14,
+   "gold": 0,
+   "lg15": 12
+  },
+  {
+   "title": "2001 스페이스 오디세이",
+   "year": 1968,
+   "pairs": 12,
+   "docs": 13,
+   "gold": 1,
+   "lg15": 12
+  },
+  {
+   "title": "수색자",
+   "year": 1956,
+   "pairs": 11,
+   "docs": 10,
+   "gold": 1,
+   "lg15": 11
+  },
+  {
+   "title": "식스 센스",
+   "year": 1999,
+   "pairs": 11,
+   "docs": 7,
+   "gold": 0,
+   "lg15": 0
+  },
+  {
+   "title": "공각기동대",
+   "year": 1995,
+   "pairs": 10,
+   "docs": 19,
+   "gold": 2,
+   "lg15": 5
+  },
+  {
+   "title": "싸이코",
+   "year": 1960,
+   "pairs": 10,
+   "docs": 17,
+   "gold": 2,
+   "lg15": 10
+  },
+  {
+   "title": "이창",
+   "year": 1954,
+   "pairs": 10,
+   "docs": 9,
+   "gold": 0,
+   "lg15": 10
+  },
+  {
+   "title": "택시 드라이버",
+   "year": 1976,
+   "pairs": 9,
+   "docs": 12,
+   "gold": 1,
+   "lg15": 9
+  },
+  {
+   "title": "터미네이터",
+   "year": 1984,
+   "pairs": 9,
+   "docs": 10,
+   "gold": 2,
+   "lg15": 9
+  },
+  {
+   "title": "샤이닝",
+   "year": 1980,
+   "pairs": 9,
+   "docs": 9,
+   "gold": 0,
+   "lg15": 9
+  },
+  {
+   "title": "이탈리안 잡",
+   "year": 1969,
+   "pairs": 9,
+   "docs": 2,
+   "gold": 0,
+   "lg15": 9
+  },
+  {
+   "title": "오명",
+   "year": 1946,
+   "pairs": 9,
+   "docs": 2,
+   "gold": 0,
+   "lg15": 9
+  },
+  {
+   "title": "대부",
+   "year": 1972,
+   "pairs": 8,
+   "docs": 13,
+   "gold": 0,
+   "lg15": 8
+  },
+  {
+   "title": "ET",
+   "year": 1982,
+   "pairs": 8,
+   "docs": 9,
+   "gold": 0,
+   "lg15": 8
+  },
+  {
+   "title": "더 헌팅",
+   "year": 1999,
+   "pairs": 8,
+   "docs": 8,
+   "gold": 2,
+   "lg15": 7
+  },
+  {
+   "title": "반지의 제왕",
+   "year": null,
+   "pairs": 8,
+   "docs": 8,
+   "gold": 1,
+   "lg15": 1
+  },
+  {
+   "title": "할로윈",
+   "year": 1978,
+   "pairs": 8,
+   "docs": 7,
+   "gold": 0,
+   "lg15": 8
+  },
+  {
+   "title": "플라이",
+   "year": 1958,
+   "pairs": 8,
+   "docs": 6,
+   "gold": 1,
+   "lg15": 7
+  },
+  {
+   "title": "링",
+   "year": 1998,
+   "pairs": 7,
+   "docs": 10,
+   "gold": 0,
+   "lg15": 1
+  },
+  {
+   "title": "타이타닉",
+   "year": 1997,
+   "pairs": 7,
+   "docs": 8,
+   "gold": 0,
+   "lg15": 1
+  }
+ ],
+ "krLongGapTop": [
+  {
+   "title": "올드보이",
+   "year": 2003,
+   "pairs": 7,
+   "docs": 8,
+   "gold": 1,
+   "lg15": 3
+  },
+  {
+   "title": "하녀",
+   "year": 1960,
+   "pairs": 3,
+   "docs": 9,
+   "gold": 1,
+   "lg15": 3
+  },
+  {
+   "title": "만추",
+   "year": 1966,
+   "pairs": 3,
+   "docs": 6,
+   "gold": 0,
+   "lg15": 3
+  },
+  {
+   "title": "기쁜 우리 젊은 날",
+   "year": 1987,
+   "pairs": 3,
+   "docs": 4,
+   "gold": 2,
+   "lg15": 3
+  },
+  {
+   "title": "살인의 추억",
+   "year": 2003,
+   "pairs": 9,
+   "docs": 9,
+   "gold": 4,
+   "lg15": 2
+  },
+  {
+   "title": "아리랑",
+   "year": 1926,
+   "pairs": 2,
+   "docs": 3,
+   "gold": 0,
+   "lg15": 2
+  },
+  {
+   "title": "지구를 지켜라!",
+   "year": 2003,
+   "pairs": 2,
+   "docs": 3,
+   "gold": 1,
+   "lg15": 2
+  },
+  {
+   "title": "저 하늘에도 슬픔이",
+   "year": 1965,
+   "pairs": 2,
+   "docs": 2,
+   "gold": 0,
+   "lg15": 2
+  },
+  {
+   "title": "투캅스",
+   "year": 1993,
+   "pairs": 2,
+   "docs": 2,
+   "gold": 0,
+   "lg15": 2
+  },
+  {
+   "title": "충녀",
+   "year": 1972,
+   "pairs": 2,
+   "docs": 1,
+   "gold": 0,
+   "lg15": 2
+  },
+  {
+   "title": "최후의 증인",
+   "year": 1980,
+   "pairs": 2,
+   "docs": 1,
+   "gold": 1,
+   "lg15": 2
+  },
+  {
+   "title": "친구",
+   "year": 2001,
+   "pairs": 12,
+   "docs": 12,
+   "gold": 0,
+   "lg15": 1
+  },
+  {
+   "title": "장화, 홍련",
+   "year": 2003,
+   "pairs": 7,
+   "docs": 8,
+   "gold": 0,
+   "lg15": 1
+  },
+  {
+   "title": "여고괴담",
+   "year": 1998,
+   "pairs": 6,
+   "docs": 4,
+   "gold": 0,
+   "lg15": 1
+  },
+  {
+   "title": "8월의 크리스마스",
+   "year": 1998,
+   "pairs": 3,
+   "docs": 3,
+   "gold": 0,
+   "lg15": 1
+  }
+ ]
+}

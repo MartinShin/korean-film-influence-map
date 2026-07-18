@@ -5,6 +5,7 @@
 import siteDataJson from '../data/generated/site-data.json';
 import rankingsJson from '../data/generated/rankings.json';
 import manifestJson from '../data/generated/manifest.json';
+import corpusStatsJson from '../data/generated/corpus-stats.json';
 
 export type SiteFilm = {
   id: string;
@@ -22,6 +23,13 @@ export type SiteFilm = {
     outDegree: number;
     pagerank: number;
   } | null;
+  corpus: {
+    inDegree: number;
+    inDocs: number;
+    gold: number;
+    longGap15: number;
+    outDegree: number;
+  } | null;
 };
 
 export type SiteEdge = {
@@ -32,8 +40,11 @@ export type SiteEdge = {
   signal: 'director_declared' | 'critic' | 'public';
   confidence: 'high' | 'medium' | 'low';
   publicationStatus: 'published' | 'candidate';
+  tier: 'verified' | 'corpus';
+  supportCount?: number;
+  maxGapYears?: number | null;
   evidence: { publicExcerpt: string; summary: string | null };
-  sources: Array<{ url: string; publisher: string | null; title: string | null }>;
+  sources: Array<{ url: string; publisher: string | null; title: string | null; publishedAt?: string | null }>;
 };
 
 export type RankRef = { rank: number; id: string };
@@ -45,6 +56,32 @@ export const rankings = rankingsJson as {
   inDegree: RankRef[];
   gold: RankRef[];
   weighted: RankRef[];
+  corpusInDegree: RankRef[];
+};
+
+export type CorpusStatRow = {
+  title: string;
+  year: number | null;
+  pairs: number;
+  docs: number;
+  gold: number;
+  lg15: number;
+};
+
+export const corpusStats = corpusStatsJson as {
+  generatedFrom: string;
+  researchDate: string;
+  totals: {
+    articlesScanned: number;
+    candidateSentences: number;
+    judgedArrows: number;
+    uniquePairs: number;
+    directorDeclared: number;
+    krkrArrows: number;
+    publishedCorpusEdges: number;
+  };
+  foreignCitedTop: CorpusStatRow[];
+  krLongGapTop: CorpusStatRow[];
 };
 export const manifest = manifestJson as {
   datasetVersion: string;
@@ -58,6 +95,8 @@ export const manifest = manifestJson as {
     candidateEdges: number;
     researchNodes: number;
     publishedNodes: number;
+    verifiedEdges: number;
+    corpusEdges: number;
     publishedSignals: Record<string, number>;
     publishedConfidence: Record<string, number>;
     kofaFilmsInGraph: number;
@@ -69,15 +108,25 @@ export const filmById = new Map(films.map((f) => [f.id, f]));
 export const publishedFilms = films.filter((f) => f.publicStatus === 'published');
 export const publishedEdges = edges.filter((e) => e.publicationStatus === 'published');
 
-export function incomingEdges(filmId: string, includeCandidates = false): SiteEdge[] {
+export function incomingEdges(filmId: string, includeCandidates = false, tier?: 'verified' | 'corpus'): SiteEdge[] {
   return edges
-    .filter((e) => e.citedFilmId === filmId && (includeCandidates || e.publicationStatus === 'published'))
+    .filter(
+      (e) =>
+        e.citedFilmId === filmId &&
+        (includeCandidates || e.publicationStatus === 'published') &&
+        (tier === undefined || e.tier === tier)
+    )
     .sort((a, b) => (filmById.get(b.citingFilmId)?.year ?? 0) - (filmById.get(a.citingFilmId)?.year ?? 0));
 }
 
-export function outgoingEdges(filmId: string, includeCandidates = false): SiteEdge[] {
+export function outgoingEdges(filmId: string, includeCandidates = false, tier?: 'verified' | 'corpus'): SiteEdge[] {
   return edges
-    .filter((e) => e.citingFilmId === filmId && (includeCandidates || e.publicationStatus === 'published'))
+    .filter(
+      (e) =>
+        e.citingFilmId === filmId &&
+        (includeCandidates || e.publicationStatus === 'published') &&
+        (tier === undefined || e.tier === tier)
+    )
     .sort((a, b) => (filmById.get(b.citedFilmId)?.year ?? 0) - (filmById.get(a.citedFilmId)?.year ?? 0));
 }
 

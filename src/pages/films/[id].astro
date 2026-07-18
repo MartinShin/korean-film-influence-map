@@ -17,20 +17,32 @@ export function getStaticPaths() {
 
 const { id } = Astro.params;
 const film = filmById.get(id!) as SiteFilm;
-const m = film.metrics!;
-const incomingPub = incomingEdges(film.id);
+const m = film.metrics;
+const incomingPub = incomingEdges(film.id, false, 'verified');
+const incomingCorpus = incomingEdges(film.id, false, 'corpus');
 const incomingCand = incomingEdges(film.id, true).filter((e) => e.publicationStatus === 'candidate');
-const outgoingPub = outgoingEdges(film.id);
+const outgoingPub = outgoingEdges(film.id, false, 'verified');
+const outgoingCorpus = outgoingEdges(film.id, false, 'corpus');
 const outgoingCand = outgoingEdges(film.id, true).filter((e) => e.publicationStatus === 'candidate');
 
-const ranks = [
-  { label: '감독 직접 언급', value: m.goldInDegree, rank: m.goldInDegree > 0 ? rankOf('gold', film.id) : null },
-  { label: '피인용 수', value: m.inDegree, rank: m.inDegree > 0 ? rankOf('inDegree', film.id) : null },
-  { label: '가중 영향 점수', value: m.weightedInDegree.toFixed(2), rank: m.weightedInDegree > 0 ? rankOf('weighted', film.id) : null },
-  { label: 'PageRank', value: m.pagerank.toFixed(5), rank: rankOf('pagerank', film.id) },
-];
+const ranks = m
+  ? [
+      { label: '감독 직접 언급', value: m.goldInDegree, rank: m.goldInDegree > 0 ? rankOf('gold', film.id) : null },
+      { label: '피인용 수', value: m.inDegree, rank: m.inDegree > 0 ? rankOf('inDegree', film.id) : null },
+      { label: '가중 영향 점수', value: m.weightedInDegree.toFixed(2), rank: m.weightedInDegree > 0 ? rankOf('weighted', film.id) : null },
+      { label: 'PageRank', value: m.pagerank.toFixed(5), rank: rankOf('pagerank', film.id) },
+    ]
+  : [];
+if (film.corpus && film.corpus.inDegree > 0) {
+  ranks.push({
+    label: '코퍼스 피인용 (씨네21)',
+    value: film.corpus.inDegree,
+    rank: rankOf('corpusInDegree', film.id),
+  });
+}
 
-const desc = `${film.titleKo}(${film.year}${film.director ? ', ' + film.director : ''})의 영향 관계 - 피인용 ${m.inDegree}건, 감독 직접 언급 ${m.goldInDegree}건. 근거 인용문과 출처 포함.`;
+const totalIn = incomingPub.length + incomingCorpus.length;
+const desc = `${film.titleKo}(${film.year}${film.director ? ', ' + film.director : ''})의 영향 관계 - 확인된 후대 인용 ${totalIn}건. 근거 인용문과 출처 포함.`;
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -60,8 +72,15 @@ const jsonLd = {
     ))}
   </ul>
 
-  <h2>이 영화를 인용·계승한 후대 영화 ({incomingPub.length})</h2>
-  <EdgeList edges={incomingPub} direction="incoming" emptyText="아직 확인된 후대 인용이 없습니다. 인용이 없다는 뜻이 아니라, 문서로 확인된 관계가 없다는 뜻입니다." />
+  <h2>이 영화를 인용·계승한 후대 영화 ({incomingPub.length + incomingCorpus.length})</h2>
+  {incomingPub.length > 0 && <h3>검증층 - 개별 검증된 관계 ({incomingPub.length})</h3>}
+  <EdgeList edges={incomingPub} direction="incoming" emptyText={incomingCorpus.length > 0 ? '' : '아직 확인된 후대 인용이 없습니다. 인용이 없다는 뜻이 아니라, 문서로 확인된 관계가 없다는 뜻입니다.'} />
+  {incomingCorpus.length > 0 && (
+    <>
+      <h3>코퍼스층 - 씨네21 전수 스캔에서 추출 ({incomingCorpus.length})</h3>
+      <EdgeList edges={incomingCorpus} direction="incoming" emptyText="" />
+    </>
+  )}
   {incomingCand.length > 0 && (
     <>
       <h3>검토 후보 (순위 미반영, {incomingCand.length})</h3>
@@ -69,8 +88,14 @@ const jsonLd = {
     </>
   )}
 
-  <h2>이 영화가 참조한 선대 영화 ({outgoingPub.length})</h2>
-  <EdgeList edges={outgoingPub} direction="outgoing" emptyText="확인된 선대 참조가 없습니다." />
+  <h2>이 영화가 참조한 선대 영화 ({outgoingPub.length + outgoingCorpus.length})</h2>
+  <EdgeList edges={outgoingPub} direction="outgoing" emptyText={outgoingCorpus.length > 0 ? '' : '확인된 선대 참조가 없습니다.'} />
+  {outgoingCorpus.length > 0 && (
+    <>
+      <h3>코퍼스층 ({outgoingCorpus.length})</h3>
+      <EdgeList edges={outgoingCorpus} direction="outgoing" emptyText="" />
+    </>
+  )}
   {outgoingCand.length > 0 && (
     <>
       <h3>검토 후보 (순위 미반영, {outgoingCand.length})</h3>

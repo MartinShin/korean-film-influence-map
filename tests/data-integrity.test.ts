@@ -5,16 +5,16 @@ import { DatasetFileSchema, FilmsFileSchema } from '../src/data/schema.ts';
 import { normalizeTitleKey } from '../src/lib/canonicalize.ts';
 
 const root = join(import.meta.dirname, '..');
-const rawDataset = readFileSync(join(root, 'data', 'public', 'dataset.v2.json'), 'utf8');
-const rawFilms = readFileSync(join(root, 'data', 'public', 'films.v2.json'), 'utf8');
+const rawDataset = readFileSync(join(root, 'data', 'public', 'dataset.v3.json'), 'utf8');
+const rawFilms = readFileSync(join(root, 'data', 'public', 'films.v3.json'), 'utf8');
 
 describe('공개 스냅샷 무결성', () => {
   it('스키마 검증 통과', () => {
     expect(() => FilmsFileSchema.parse(JSON.parse(rawFilms))).not.toThrow();
     expect(() => DatasetFileSchema.parse(JSON.parse(rawDataset))).not.toThrow();
   });
-  it('내부 필드가 공개 스냅샷에 없다', () => {
-    for (const needle of ['tier', 'batch', 'review_flag', 'pending_upgrade', 'unverified', 'agree', 'evidence_raw']) {
+  it('내부 필드가 공개 스냅샷에 없다 (tier는 v3부터 공개 필드)', () => {
+    for (const needle of ['batch', 'review_flag', 'pending_upgrade', 'unverified', 'agree', 'evidence_raw']) {
       expect(rawDataset.includes(`"${needle}"`), `${needle} 필드 유출`).toBe(false);
     }
   });

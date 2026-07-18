@@ -1,0 +1,135 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { url } from '../lib/url.ts';
+import { corpusStats, topFilms, manifest } from '../lib/site.ts';
+
+const t = corpusStats.totals;
+const corpusTop = topFilms('corpusInDegree', 20);
+---
+
+<BaseLayout
+  title="코퍼스"
+  description="씨네21 아카이브 전수 스캔(기사 약 9만 7천 건)에서 추출한 영화 인용 화살표 - 한국영화 피인용, 지속 영향력(long-gap), 외국영화 소환 순위."
+  path="/corpus/"
+>
+  <h1>코퍼스층 - 씨네21 전수 스캔</h1>
+  <p class="lede">
+    씨네21 아카이브({corpusStats.generatedFrom})를 전수 스캔해, 기사 문장이 실제로
+    <strong>"A가 B를 참조/오마주/리메이크했다"</strong>고 주장하는 경우만 방향 있는 화살표로 추출한 층입니다.
+    단순 동시 언급이나 흥행 비교("OO 이후 최고 오프닝")는 화살표로 인정하지 않았습니다.
+  </p>
+
+  <ul class="stat-grid">
+    <li><span class="num">{t.articlesScanned.toLocaleString()}</span><span class="label">스캔한 기사</span></li>
+    <li><span class="num">{t.candidateSentences.toLocaleString()}</span><span class="label">후보 문장 (기계 추출)</span></li>
+    <li><span class="num">{t.judgedArrows.toLocaleString()}</span><span class="label">판정 통과 화살표</span></li>
+    <li><span class="num">{t.publishedCorpusEdges}</span><span class="label">본 그래프 편입 (한국영화 간)</span></li>
+  </ul>
+
+  <h2>추출 방법</h2>
+  <ol>
+    <li>기사 본문에서 영화 제목 언급(씨네21 자체 링크 + 괄호 표기)을 수집.</li>
+    <li>같은 문장에 영화 2편 이상 + 영향 어휘(영향·오마주·리메이크·계보·참조·인용·차용·원형·효시 등)가 있는 문장만 후보로 추림.</li>
+    <li>후보 문장마다 "방향 있는 관계 주장인가"를 판정 - 흥행 비교, 병렬 나열, 소설·만화 원작, 같은 감독 자기 작품, TV·음악은 기각.</li>
+    <li>통과한 화살표에 근거 문장, 기사 링크, 기사 날짜를 붙여 기록. 같은 관계를 여러 기사가 말하면 지지 기사 수로 합산.</li>
+  </ol>
+  <p class="meta-line">
+    한국영화 사이의 화살표만 본 그래프(영화 페이지·아래 순위)에 편입되며, 검증층과 중복되는 관계는 검증층을 우선합니다.
+    공식 4지표(<a href={url('/rankings/')}>순위</a>)는 여전히 검증층에서만 계산합니다.
+  </p>
+
+  <h2>한국영화 코퍼스 피인용 순위</h2>
+  <p>검증층에 없던 새 관계 기준. 괄호 안은 지지 기사 수 합계.</p>
+  <div class="table-wrap">
+    <table>
+      <caption>코퍼스 피인용 상위 20편 (검증층 중복 제외)</caption>
+      <thead>
+        <tr>
+          <th class="num" scope="col">#</th>
+          <th scope="col">영화</th>
+          <th class="num" scope="col">피인용 쌍</th>
+          <th class="num" scope="col">지지 기사</th>
+          <th class="num" scope="col">15년+ 인용</th>
+        </tr>
+      </thead>
+      <tbody>
+        {corpusTop.map((f) => (
+          <tr>
+            <td class="num">{f.rank}</td>
+            <td><a href={url(`/films/${f.id}/`)}>{f.titleKo} ({f.year})</a></td>
+            <td class="num">{f.corpus?.inDegree ?? 0}</td>
+            <td class="num">{f.corpus?.inDocs ?? 0}</td>
+            <td class="num">{f.corpus?.longGap15 ?? 0}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>지속 영향력 - 개봉 15년 이상 지나 인용된 한국영화</h2>
+  <p>
+    개봉 직후의 화제성 인용과 세대를 넘은 인용은 다릅니다. 아래는 전체 코퍼스 화살표(검증층 중복 포함) 기준으로,
+    개봉 15년 이상 지난 시점의 기사가 소환한 한국영화입니다. 학술 선행연구(PNAS 2015)가 "장기 간격 인용"을
+    지속 영향력의 최선 지표로 보고한 데서 가져온 방법입니다.
+  </p>
+  <div class="table-wrap">
+    <table>
+      <caption>long-gap(15년+) 인용쌍 보유 한국영화</caption>
+      <thead>
+        <tr>
+          <th scope="col">영화</th>
+          <th class="num" scope="col">15년+ 쌍</th>
+          <th class="num" scope="col">전체 쌍</th>
+          <th class="num" scope="col">감독 발언</th>
+        </tr>
+      </thead>
+      <tbody>
+        {corpusStats.krLongGapTop.map((s) => (
+          <tr>
+            <td>{s.title} ({s.year ?? '?'})</td>
+            <td class="num">{s.lg15}</td>
+            <td class="num">{s.pairs}</td>
+            <td class="num">{s.gold}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>한국 영화담론이 소환한 외국영화</h2>
+  <p>
+    씨네21 기사들이 인용 화살표의 피인용 쪽으로 가장 많이 세운 외국영화들. 한국 영화비평의 참조 우주를
+    보여주는 부산물 순위로, 본 그래프(한국영화 내부)에는 포함되지 않습니다.
+  </p>
+  <div class="table-wrap">
+    <table>
+      <caption>외국영화 피인용 상위 (전체 화살표 기준)</caption>
+      <thead>
+        <tr>
+          <th scope="col">영화</th>
+          <th class="num" scope="col">인용쌍</th>
+          <th class="num" scope="col">지지 기사</th>
+          <th class="num" scope="col">15년+ 쌍</th>
+        </tr>
+      </thead>
+      <tbody>
+        {corpusStats.foreignCitedTop.map((s) => (
+          <tr>
+            <td>{s.title} ({s.year ?? '?'})</td>
+            <td class="num">{s.pairs}</td>
+            <td class="num">{s.docs}</td>
+            <td class="num">{s.lg15}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>한계</h2>
+  <ul>
+    <li>씨네21 단일 코퍼스(1999~2026)의 관찰이다. 1999년 이전 담론과 다른 매체의 화살표는 아직 없다.</li>
+    <li>문장 단위 추출이라, 두 문장에 걸친 영향 서술은 놓친다 (회수율 개선 예정).</li>
+    <li>화살표는 "기사가 그렇게 주장했다"는 기록이지 사실 확정이 아니다 - 신호(감독 발언/평론가)와 신뢰도를 함께 보라.</li>
+    <li>데이터셋 {manifest.datasetVersion} 기준이며, 전체 데이터는 <a href={url('/data/')}>데이터 페이지</a>에서 내려받을 수 있다.</li>
+  </ul>
+</BaseLayout>

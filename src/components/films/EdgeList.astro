@@ -34,6 +34,12 @@ const hostAvailable = (id: string) => filmById.get(id)?.publicStatus === 'publis
             <span class="rel">{RELATION_LABEL[e.relationType] ?? e.relationType}</span>
             <span class={`sig sig-${e.signal}`}>{SIGNAL_MARK[e.signal]} {SIGNAL_LABEL[e.signal]}</span>
             <span class="conf">{CONFIDENCE_LABEL[e.confidence]}</span>
+            {e.tier === 'corpus' && (
+              <span class="badge-kofa">코퍼스{e.supportCount && e.supportCount > 1 ? ` · 기사 ${e.supportCount}건` : ''}</span>
+            )}
+            {e.tier === 'corpus' && (e.maxGapYears ?? -999) >= 15 && (
+              <span class="conf">개봉 {e.maxGapYears}년 후 인용</span>
+            )}
             {e.publicationStatus === 'candidate' && <span class="badge-candidate">검토 후보 · 순위 미반영</span>}
           </div>
           {e.evidence.publicExcerpt && <blockquote>{e.evidence.publicExcerpt}</blockquote>}
@@ -42,7 +48,10 @@ const hostAvailable = (id: string) => filmById.get(id)?.publicStatus === 'publis
             {e.sources.map((s, i) => (
               <>
                 {i > 0 && ' · '}
-                <a href={s.url} rel="noopener noreferrer" target="_blank">{new URL(s.url).hostname.replace(/^www\./, '')}</a>
+                <a href={s.url} rel="noopener noreferrer" target="_blank">
+                  {s.publisher ?? new URL(s.url).hostname.replace(/^www\./, '')}
+                  {s.publishedAt ? ` (${s.publishedAt})` : ''}
+                </a>
               </>
             ))}
           </p>

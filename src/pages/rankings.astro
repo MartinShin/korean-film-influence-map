@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Notice from '../components/common/Notice.astro';
 import RankingTable from '../components/rankings/RankingTable.astro';
 import { manifest } from '../lib/site.ts';
+import { url } from '../lib/url.ts';
 
 const c = manifest.counts;
 ---
@@ -14,8 +15,9 @@ const c = manifest.counts;
 >
   <h1>영향력 순위</h1>
   <p class="lede">
-    네 가지 척도를 나란히 놓습니다. 공개 관계 {c.publishedEdges}건(영화 {c.publishedNodes}편)만 사용하고,
-    위키 단독 근거 후보 {c.candidateEdges}건은 계산에서 제외합니다.
+    네 가지 공식 척도는 개별 검증층 관계 {c.verifiedEdges}건(방법론 v1)에서만 계산합니다. 씨네21 전수 스캔으로
+    추가된 코퍼스층 {c.corpusEdges}건은 <a href={url('/corpus/')}>코퍼스 페이지</a>에서 따로 집계하며,
+    위키 단독 근거 후보 {c.candidateEdges}건은 어디에도 반영하지 않습니다.
   </p>
   <Notice />
 
